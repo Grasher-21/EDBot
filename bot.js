@@ -288,5 +288,5 @@ ${messageQuote}`);
 }
 
 function bgs(message) {
-    message.reply(`background simulator is till under construction :D`);
+    message.reply(`background simulator is still under construction :D`);
 }
