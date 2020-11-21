@@ -2,13 +2,12 @@ const Discord = require('discord.js');
 const bot = new Discord.Client();
 
 const userAdmin = '101462082016260096';
-
 const botId = '779689202245828608';
+
+const eliteDangerousChannelId = '577875159596400660';
 const botLogChannelId = '779695530514448384';
+
 const botCommand = '!';
-
-const generalChannelId = '208640671924486144';
-
 const messageQuote = `\`\`\``;
 
 bot.login(process.env.BOT_TOKEN);
@@ -38,8 +37,7 @@ bot.on('message', message => {
         }
     }
 
-     if (message.channel.id == generalChannelId && message.content.startsWith(botCommand) && message.author.id != botId) {
-    //if (message.channel.id == botLogChannelId && message.content.startsWith(botCommand) && message.author.id != botId) {
+     if (message.channel.id == eliteDangerousChannelId && message.content.startsWith(botCommand) && message.author.id != botId) {
         logCommandRequest(message);
 
         var command = message.content.split(' ');
@@ -177,10 +175,12 @@ ${messageQuote}cs
 ${messageQuote}cs
 ##### Guardian Obelisks #####${messageQuote}SYNUEFE NL-N C23-4     B 3     (RUINS 2)     (Distance from Sol: 871 LY)
 ${messageQuote}cs
+##### Guardian Materials (Best Spot) #####${messageQuote}NGC 2451A SECTOR IR-W D1-77     AB 1 A     (Distance from Sol: 803 LY)
+${messageQuote}cs
 ##### Guardian Weapons & Materials #####${messageQuote}SYNUEFE EU-Q C21-10     A 3     (Distance from Sol: 790 LY)
 ${messageQuote}cs
-##### Guardian Beacon #####${messageQuote}HIP 36823     (Distance from Sol: 667 LY)`);
-}
+##### Guardian Beacon #####${messageQuote}HIP 36823     (Distance from Sol: 667 LY)`)
+};
 
 function thargoids(message) {
     message.reply(`${messageQuote}cs
