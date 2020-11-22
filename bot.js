@@ -77,6 +77,11 @@ bot.on('message', message => {
                 thargoids(message);
                 break;
 
+            case '!heart':
+            case '!hearts':
+                hearts(message);
+                break;
+
             case '!scanner':
             case '!scanners':
                 scanners(message);
@@ -136,6 +141,7 @@ ${messageQuote}
 !ships
 !guardians
 !thargoids
+!hearts
 !scanners
 !mining
 !materials
@@ -198,6 +204,10 @@ ${messageQuote}cs
 ##### More Commands for Thargoids #####${messageQuote}!hearts`);
 }
 
+function hearts(message) {
+    message.reply(`hearts is still under construction :D`);
+}
+
 function scanners(message) {
     message.reply(`${messageQuote}
 Ship > Data Link Scanner - Scan for specific items in space
@@ -225,8 +235,8 @@ Refinery
 Cargo Racks -> 100T+ cargo space
 
 ----- Quick Tips -----
-1) use the prospect on asteroids before using the mining laser for better yield
-2) go to eddb.io to find where to get the modules or write !sites for more${messageQuote}
+1) Use the prospect on asteroids before using the mining laser for better yield
+2) Go to http://eddb.io to find where to get the modules or write !sites${messageQuote}
 
 ${messageQuote}cs
 ##### Deep Core Mining (Void Opals or Low Temperature Diamonds) #####${messageQuote}
@@ -249,7 +259,7 @@ Cargo Racks (100T+ cargo space)
 1) Use pulse wave analyser and look for really bright yellow asteroids
 2) Use prospector limpet on the asteroid to see if it has a core
 3) Use seismic charge launcher on the asteroid's fissures
-4) Detonate the placed charges when the graphic is in the "good" range
+4) Go AWAY from the asteroid and detonate the charges when the graphic reaches the "good" range
 5) When the asteroid breaks, use abrasion blaster on the surface to release the minerals from the asteroid
 ${messageQuote}`);
 }
