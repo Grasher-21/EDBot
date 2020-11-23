@@ -232,6 +232,7 @@ Mining Lasers (the more the merrier)
 Collector Limpet Controller (the more the merrier)
 Prospector Limpet Controller (1 prospector only)
 Refinery
+Detailed Surface Scanner
 Cargo Racks -> 100T+ cargo space
 
 ----- Quick Tips -----
