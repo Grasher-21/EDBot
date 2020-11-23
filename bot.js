@@ -250,7 +250,7 @@ Abrasion Blaster
 Pulse Wave Analyser
 
 ----- Optional Internal -----
-Collector Limpet Controller (3+ collector limpets active)
+Collector Limpet Controller (the more the merrier)
 Prospector Limpet Controller (1 prospector only)
 Refinery
 Detailed Surface Scanner
