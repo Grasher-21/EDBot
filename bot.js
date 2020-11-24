@@ -190,11 +190,13 @@ INFLUENCE:
 - The Faction will expland to the closest system that has 6 or less Factions. If all systems within 20 LY range have 7 Factions, then it will invade against a non-native Faction in a system where that non-native is the lowest influence anywhere within 20 LY range. That target Faction must NOT be in a conflict or in cooldown from one (1 day).
 - Conflicts will be decided in a "Best Of 7 Days". Whoever reaches 4 daily wins, stays in the system while the other one gets removed.
 - When in a war, INF of both Factions are locked until the war ends, meaning missions will not have an impact on INF.
-- There are several system "states" that will make INF easier or harder to obtain for a Faction, for example:
---- When the Faction is in a state of "Public Holiday" in the system X, INF will increase faster per mission than the usual in that same system, however it will not happen in other systems where that Faction is present.
---- Same principle applies when the Faction is in a state of "Infrastructure Failure" in the system X. INF will be harder to increase, in fact, it will automatically drop 1% INF per day which can be countered by player's actions or by the RNG from the BGS for that Faction's actions.${messageQuote}`);
+${messageQuote}`);
 
     message.reply(`${messageQuote}
+- There are several system "states" that will make INF easier or harder to obtain for a Faction, for example:
+--- When the Faction is in a state of "Public Holiday" in the system X, INF will increase faster per mission than the usual in that same system, however it will not happen in other systems where that Faction is present.
+--- Same principle applies when the Faction is in a state of "Infrastructure Failure" in the system X. INF will be harder to increase, in fact, it will automatically drop 1% INF per day which can be countered by player's actions or by the RNG from the BGS for that Faction's actions.
+
 REPUTATION:
 - REP within a Faction depends on the Faction, meaning you will have the same REP level no matter the system you are at.
 - When you have high REP within a Faction, better missions and better rewards will be available.
