@@ -95,6 +95,11 @@ bot.on('message', message => {
                 mining(message);
                 break;
 
+            case '!price':
+            case '!prices':
+                prices(message);
+                break;
+
             case '!rank':
             case '!ranks':
                 ranks(message);
@@ -167,6 +172,7 @@ ${messageQuote}
 !hearts
 !materials
 !mining
+!prices
 !ranks
 !scanners
 !ships
@@ -377,7 +383,40 @@ Cargo Racks (100T+ cargo space)
 3) Use seismic charge launcher on the asteroid's fissures
 4) Go AWAY from the asteroid and detonate the charges when the graphic reaches the "good" range
 5) When the asteroid breaks, use abrasion blaster on the surface to release the minerals from the asteroid
-${messageQuote}`);
+${messageQuote}
+For mining prices check with !prices`);
+}
+
+function prices(message) {
+    message.reply(`${messageQuote}cs
+##### Mining Prices List #####${messageQuote}${messageQuote}Alexandrite                       2,171,870
+Bauxite                              10,770
+Benitoite                         1,493,210
+Bertrandite                         187,300
+Bromellite                          304,220
+Coltan                               60,500
+Cryolite                            121,200
+Gallite                             117,960
+Goslarite                            59,470
+Grandidierite                     1,971,980
+Indite                              112,850
+Jadeite                             423,720
+Lepidolite                            7,090
+Lithium Hydroxide                    56,730
+Low Temperature Diamonds          1,062,880
+Methane Clathrate                    16,490
+Methanol Monohydrate Crystals        24,770
+Moissanite                          248,250
+Monazite                          2,009,220
+Musgravite                        1,985,210
+Painite                             529,850
+Pyrophyllite                        114,680
+Rhodplumsite                      1,176,880
+Rutile                               19,970
+Serendibite                       1,726,290
+Taaffeite                           520,770
+Uraninite                            28,650
+Void Opal                         1,352,140${messageQuote}`);
 }
 
 function ranks(message) {
