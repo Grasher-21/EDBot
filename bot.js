@@ -389,7 +389,7 @@ For mining prices check with !prices`);
 
 function minerals(message) {
     message.reply(`${messageQuote}cs
-##### Prices of all minerals #####${messageQuote}${messageQuote}Alexandrite                       2,171,870
+##### Max price Fleet Carriers can purchase the Minerals #####${messageQuote}${messageQuote}Alexandrite                       2,171,870
 Bauxite                              10,770
 Benitoite                         1,493,210
 Bertrandite                         187,300
