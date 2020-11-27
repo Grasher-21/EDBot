@@ -206,8 +206,7 @@ REPUTATION:
 SUPER POWERS:
 - Alliance, Federation and Empire are Factions but in a "large scale".
 - Federation and Empire have internal Ranks. When you reach maximum level of a Rank, you will be able to do a "special mission" which will make you advance in their Ranks. You will be able to buy some ships according to the Rank you have.${messageQuote}
-Federation Ranks: <https://elite-dangerous.fandom.com/wiki/Federation/Ranks>
-Empire Ranks: <https://elite-dangerous.fandom.com/wiki/Empire/Ranks>`);
+https://lh4.googleusercontent.com/i_8EozvWpZ55ACzR_3OTKu4SQ5b3ge9lG1K4GrdexmKPy_Y3qjytwHfXc_-QqDV9FAe8xj-KjkKUEw=w1920-h937-rw`);
 }
 
 function bgsAdvanced(message) {
@@ -382,9 +381,10 @@ ${messageQuote}`);
 }
 
 function ranks(message) {
-    message.reply(`${messageQuote}
-ranks is under construction :D
-${messageQuote}`);
+    message.reply(`${messageQuote}cs
+Ranks for: Combat, Exploration, Trade, CQC, Federation and Imperial
+${messageQuote}
+https://lh4.googleusercontent.com/i_8EozvWpZ55ACzR_3OTKu4SQ5b3ge9lG1K4GrdexmKPy_Y3qjytwHfXc_-QqDV9FAe8xj-KjkKUEw=w1920-h937-rw`);
 }
 
 function scanners(message) {
