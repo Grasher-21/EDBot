@@ -91,13 +91,13 @@ bot.on('message', message => {
                 materials(message);
                 break;
 
-            case '!mining':
-                mining(message);
+            case '!mineral':
+            case '!minerals':
+                minerals(message);
                 break;
 
-            case '!price':
-            case '!prices':
-                prices(message);
+            case '!mining':
+                mining(message);
                 break;
 
             case '!rank':
@@ -171,8 +171,8 @@ ${messageQuote}
 !guardians
 !hearts
 !materials
+!minerals
 !mining
-!prices
 !ranks
 !scanners
 !ships
@@ -387,9 +387,9 @@ ${messageQuote}
 For mining prices check with !prices`);
 }
 
-function prices(message) {
+function minerals(message) {
     message.reply(`${messageQuote}cs
-##### Mining Prices List #####${messageQuote}${messageQuote}Alexandrite                       2,171,870
+##### Prices of all minerals #####${messageQuote}${messageQuote}Alexandrite                       2,171,870
 Bauxite                              10,770
 Benitoite                         1,493,210
 Bertrandite                         187,300
