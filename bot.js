@@ -382,7 +382,7 @@ ${messageQuote}`);
 
 function ranks(message) {
     message.reply(`${messageQuote}cs
-Ranks for: Combat, Exploration, Trade, CQC, Federal and Imperial
+##### Ranks for: Combat, Exploration, Trade, CQC, Federal and Imperial #####
 ${messageQuote}
 https://lh4.googleusercontent.com/i_8EozvWpZ55ACzR_3OTKu4SQ5b3ge9lG1K4GrdexmKPy_Y3qjytwHfXc_-QqDV9FAe8xj-KjkKUEw=w1920-h937-rw`);
 }
