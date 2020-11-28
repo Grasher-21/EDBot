@@ -61,10 +61,6 @@ bot.on('message', message => {
                 bgs(message);
                 break;
 
-            case '!bgs_advanced':
-                bgsAdvanced(message);
-                break;
-
             case '!engineer':
             case '!engineers':
                 engineers(message);
@@ -82,6 +78,10 @@ bot.on('message', message => {
             case '!heart':
             case '!hearts':
                 hearts(message);
+                break;
+
+            case '!influence':
+                influence(message);
                 break;
 
             case '!mat':
@@ -165,11 +165,11 @@ function help(message) {
     message.reply(`these are the available commands:
 ${messageQuote}
 !bgs
-!bgs_advanced
 !engineers
 !exploration
 !guardians
 !hearts
+!influence
 !materials
 !minerals
 !mining
@@ -215,42 +215,8 @@ SUPER POWERS:
 - Alliance, Federation and Empire are Factions but in a "large scale".
 - Federation and Empire have internal Ranks. When you reach maximum level of a Rank, you will be able to do a "special mission" which will make you advance in their Ranks. You will be able to buy some ships according to the Rank you have.
 
-You can see the Super Power ranks here: ${messageQuote}<https://drive.google.com/file/d/1lmjWRO1JiiIsdleG7tmnUSzg5nEs244w>`);
-}
-
-function bgsAdvanced(message) {
-    message.reply(`${messageQuote}
-- There is a cap of INF that is resetted every day at server tick +/- at 17:00 UTC.
-- Various activities contribute to the total work done for a Faction in a system. If there is no opposition, you will get a positive influence increase at tick for that Faction.
-- There are processes that convert these various activities into "points" at tick. These calculations make some attempt to balance the different activities against each other so that a fair comparison can be done between trade, cartography and bounty hunting as well as mission INF+ points.
-
-All activities are subject to diminishing returns.
-A "made up" example of this:
-- The 1st commander does enough work to earn 4 points in bounty hunting.
-- The 2nd commander does a similar amount but earns only 3 points by bounty hunting.
-- The 3rd commander gets only 2 points for their effort.
-- The 4th commander works just as hard but only improves the situation by 1 point.
-- Any commanders beyond this earn only partial points for doing the same effort.
-- All that bounty hunting, earns only 10 and a bit points towards the daily total.
-
-- Another group of commanders earn their daily points by profitable trade into the station.
-- The first earns 4 points, the 2nd gets 3. You know the drill by now. A total of 10 more BGS points earned by trade.
-- A pair of dedicated mission runners do an insane amount of work for the day. 
-- Their work is also broken down to 4 + 3 + 2 + 1 = 10 more points.
-
-- A single commander drops several months worth of exploration data.
-- This is way past the soft cap, so gets the 10 points plus an additional 2.
-- Points for the day are 10 + 10 + 10 + 10 plus a bonus 2 for 42 in total. That is a good amount and should gain close to the maximum expected influence for the day.${messageQuote}
-`);
-
-    message.reply(`${messageQuote}
-Unfortunately, another group of commanders are also working for a lower Faction in the system.
-- 1st commander does 4 points worth of bounty hunting.
-- Another 4 points of trade.
-- They worked hard at missions and did 9 points worth.
-- They dropped only a modest amount of cartographics, not enough to earn full points, so only get 2.
-- Their daily total after fairly casual effort by only a few commanders is 19. Their relatively modest effort has undone almost half of the 42. The Faction you worked for still increased their INF but in a modest way.
-${messageQuote}`);
+You can see the Super Power ranks here: ${messageQuote}<https://drive.google.com/file/d/1lmjWRO1JiiIsdleG7tmnUSzg5nEs244w>
+For more information on how INFLUENCE works -> **!influence**`);
 }
 
 function engineers(message) {
@@ -311,6 +277,41 @@ ${messageQuote}cs
 function hearts(message) {
     message.reply(`${messageQuote}
 hearts is under construction :D
+${messageQuote}`);
+}
+
+function influence(message) {
+    message.reply(`${messageQuote}
+- There is a cap of INF that is resetted every day at server tick +/- at 17:00 UTC.
+- Various activities contribute to the total work done for a Faction in a system. If there is no opposition, you will get a positive influence increase at tick for that Faction.
+- There are processes that convert these various activities into "points" at tick. These calculations make some attempt to balance the different activities against each other so that a fair comparison can be done between trade, cartography and bounty hunting as well as mission INF+ points.
+
+All activities are subject to diminishing returns.
+A "made up" example of this:
+- The 1st commander does enough work to earn 4 points in bounty hunting.
+- The 2nd commander does a similar amount but earns only 3 points by bounty hunting.
+- The 3rd commander gets only 2 points for their effort.
+- The 4th commander works just as hard but only improves the situation by 1 point.
+- Any commanders beyond this earn only partial points for doing the same effort.
+- All that bounty hunting, earns only 10 and a bit points towards the daily total.
+
+- Another group of commanders earn their daily points by profitable trade into the station.
+- The first earns 4 points, the 2nd gets 3. You know the drill by now. A total of 10 more BGS points earned by trade.
+- A pair of dedicated mission runners do an insane amount of work for the day. 
+- Their work is also broken down to 4 + 3 + 2 + 1 = 10 more points.
+
+- A single commander drops several months worth of exploration data.
+- This is way past the soft cap, so gets the 10 points plus an additional 2.
+- Points for the day are 10 + 10 + 10 + 10 plus a bonus 2 for 42 in total. That is a good amount and should gain close to the maximum expected influence for the day.${messageQuote}
+`);
+
+    message.reply(`${messageQuote}
+Unfortunately, another group of commanders are also working for a lower Faction in the system.
+- 1st commander does 4 points worth of bounty hunting.
+- Another 4 points of trade.
+- They worked hard at missions and did 9 points worth.
+- They dropped only a modest amount of cartographics, not enough to earn full points, so only get 2.
+- Their daily total after fairly casual effort by only a few commanders is 19. Their relatively modest effort has undone almost half of the 42. The Faction you worked for still increased their INF but in a modest way.
 ${messageQuote}`);
 }
 
