@@ -239,7 +239,7 @@ These are optional although strongly recommended. You may wanna try shooting som
 ----- Core Internal -----
 Frame Shift Drive (rating A, also engineer it with Increased FSD Range and Mass Manager experimental)
 
-Use rating D on all other Core modules for less mass which improves your jump range
+Use rating D on all other modules for less mass which improves your jump range and if possible engineer everything you can with lightweight to reduce mass
 
 ----- Optional Internal -----
 Fuel Scoop (the best you can get)
