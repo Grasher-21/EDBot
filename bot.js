@@ -211,8 +211,7 @@ REPUTATION:
 
 SUPER POWERS:
 - Alliance, Federation and Empire are Factions but in a "large scale".
-- Federation and Empire have internal Ranks. When you reach maximum level of a Rank, you will be able to do a "special mission" which will make you advance in their Ranks. You will be able to buy some ships according to the Rank you have.${messageQuote}
-https://lh4.googleusercontent.com/i_8EozvWpZ55ACzR_3OTKu4SQ5b3ge9lG1K4GrdexmKPy_Y3qjytwHfXc_-QqDV9FAe8xj-KjkKUEw=w1920-h937-rw`);
+- Federation and Empire have internal Ranks. When you reach maximum level of a Rank, you will be able to do a "special mission" which will make you advance in their Ranks. You will be able to buy some ships according to the Rank you have.${messageQuote}<https://drive.google.com/file/d/1lmjWRO1JiiIsdleG7tmnUSzg5nEs244w>`);
 }
 
 function bgsAdvanced(message) {
@@ -237,15 +236,16 @@ A "made up" example of this:
 
 - A single commander drops several months worth of exploration data.
 - This is way past the soft cap, so gets the 10 points plus an additional 2.
-- Points for the day are 10 + 10 + 10 + 10 plus a bonus 2 for 42 in total. That is a good amount and should gain close to the maximum expected influence for the day.
+- Points for the day are 10 + 10 + 10 + 10 plus a bonus 2 for 42 in total. That is a good amount and should gain close to the maximum expected influence for the day.${messageQuote}
+`);
 
+    message.reply(`${messageQuote}
 Unfortunately, another group of commanders are also working for a lower Faction in the system.
-1st commander does 4 points worth of bounty hunting.
-Another 4 points of trade.
-They worked hard at missions and did 9 points worth.
-They dropped only a modest amount of cartographics, not enough to earn full points, so only get 2.
-
-Their daily total after fairly casual effort by only a few commanders is 19. Their relatively modest effort has undone almost half of the 42. The Faction you worked for still increased their INF but in a modest way.
+- 1st commander does 4 points worth of bounty hunting.
+- Another 4 points of trade.
+- They worked hard at missions and did 9 points worth.
+- They dropped only a modest amount of cartographics, not enough to earn full points, so only get 2.
+- Their daily total after fairly casual effort by only a few commanders is 19. Their relatively modest effort has undone almost half of the 42. The Faction you worked for still increased their INF but in a modest way.
 ${messageQuote}`);
 }
 
@@ -343,6 +343,38 @@ PS: For better grind, once you pick all materials in a HGE, close the game and r
 ${messageQuote}`);
 }
 
+function minerals(message) {
+    message.reply(`${messageQuote}cs
+##### Max price Fleet Carriers can purchase the Minerals #####${messageQuote}${messageQuote}Alexandrite                       2,171,870
+Bauxite                              10,770
+Benitoite                         1,493,210
+Bertrandite                         187,300
+Bromellite                          304,220
+Coltan                               60,500
+Cryolite                            121,200
+Gallite                             117,960
+Goslarite                            59,470
+Grandidierite                     1,971,980
+Indite                              112,850
+Jadeite                             423,720
+Lepidolite                            7,090
+Lithium Hydroxide                    56,730
+Low Temperature Diamonds          1,062,880
+Methane Clathrate                    16,490
+Methanol Monohydrate Crystals        24,770
+Moissanite                          248,250
+Monazite                          2,009,220
+Musgravite                        1,985,210
+Painite                             529,850
+Pyrophyllite                        114,680
+Rhodplumsite                      1,176,880
+Rutile                               19,970
+Serendibite                       1,726,290
+Taaffeite                           520,770
+Uraninite                            28,650
+Void Opal                         1,352,140${messageQuote}`);
+}
+
 function mining(message) {
     message.reply(`${messageQuote}cs
 ##### Laser Mining (Painite) #####${messageQuote}
@@ -385,38 +417,6 @@ Cargo Racks (100T+ cargo space)
 5) When the asteroid breaks, use abrasion blaster on the surface to release the minerals from the asteroid
 ${messageQuote}
 For mining prices check with !prices`);
-}
-
-function minerals(message) {
-    message.reply(`${messageQuote}cs
-##### Max price Fleet Carriers can purchase the Minerals #####${messageQuote}${messageQuote}Alexandrite                       2,171,870
-Bauxite                              10,770
-Benitoite                         1,493,210
-Bertrandite                         187,300
-Bromellite                          304,220
-Coltan                               60,500
-Cryolite                            121,200
-Gallite                             117,960
-Goslarite                            59,470
-Grandidierite                     1,971,980
-Indite                              112,850
-Jadeite                             423,720
-Lepidolite                            7,090
-Lithium Hydroxide                    56,730
-Low Temperature Diamonds          1,062,880
-Methane Clathrate                    16,490
-Methanol Monohydrate Crystals        24,770
-Moissanite                          248,250
-Monazite                          2,009,220
-Musgravite                        1,985,210
-Painite                             529,850
-Pyrophyllite                        114,680
-Rhodplumsite                      1,176,880
-Rutile                               19,970
-Serendibite                       1,726,290
-Taaffeite                           520,770
-Uraninite                            28,650
-Void Opal                         1,352,140${messageQuote}`);
 }
 
 function ranks(message) {
