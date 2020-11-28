@@ -185,17 +185,19 @@ ${messageQuote}
 
 function bgs(message) {
     message.reply(`${messageQuote}
-Background Simulator is the algorithm behind all Factions. As a player, you can fight for a Faction and increase the Influence (INF) of a Faction in a system as well as your Reputation (REP) within that Faction. The maximum number of Factions in a system is 7, however it can have temporarily 8 if certain conditions are met.
+Background Simulator is the algorithm behind all Factions. As a player, you can fight for a Faction and increase the Influence (INF) of a Faction in a system as well as your Reputation (REP) within that Faction. The maximum number of Factions in a system is 7, however the system can have 8 Factions if certain conditions are met for a small period of time.
 
 INFLUENCE:
 - When a Faction has 75% or more INF in a system, that Faction will expand to another system that is within 20 LY range.
 - Expansion takes a total of 10 days to happen: 5 days of expansion preparation and other 5 days of on going expansion.
 - When a Faction has 2.5% or less INF in a system, they will be removed from that system.
 - All Factions have a Native system and they will never leave that system even if INF is 2.5% or less.
-- The system where the Faction will expand to is the one that is closest, however there are ways of "forcing" a Faction to expand to a specific system within those 20 LY range.
-- The Faction will expland to the closest system that has 6 or less Factions. If all systems within 20 LY range have 7 Factions, then it will invade against a non-native Faction in a system where that non-native is the lowest influence anywhere within 20 LY range. That target Faction must NOT be in a conflict or in cooldown from one (1 day).
-- Conflicts will be decided in a "Best Of 7 Days". Whoever reaches 4 daily wins, stays in the system while the other one gets removed.
+- The system where the Faction will expand to is the one that is closest, however there are ways of "forcing" a Faction to expand to a specific system within those 20 LY range. 
+- The Faction will expand to the closest system that has 6 or less Factions. If all systems within 20 LY range have 7 Factions, then it will invade against a non-native Faction in a system where that non-native is the lowest influence anywhere within 20 LY range. That target Faction must NOT be in a conflict or in cooldown from one (1 day).
+- Conflicts will be decided in a "Best Of 7". Whoever reaches 4 daily wins, stays in the system while the other one gets removed.
 - When in a war, INF of both Factions are locked until the war ends, meaning missions will not have an impact on INF.
+- Note: Cartographics will only help the Faction that controls the station and if that Faction is in a war, it won't help increasing INF for that Faction.
+- Note: Combat Bonds / Bounties will not help the Faction increase INF if it's in a war.
 ${messageQuote}`);
 
     message.reply(`${messageQuote}
