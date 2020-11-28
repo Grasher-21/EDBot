@@ -351,7 +351,7 @@ Core Dynamic Composites         Boom               Federation
 PS: Filter the galaxy map in order to show State and Allegiance systems${messageQuote}`);
 
     message.reply(`${messageQuote}
-For better grind find a High Grade Emission (HGE) that has a timer above 10 minutes, the more the merrier. Once you pick all materials in that HGE, close the game (go to the Desktop) and open it again. Enter in supercruise and the closest signal should be the HGE signal. You might need to make a 180 degree loop to go into the HGE. Pick the materials and repeat the process${messageQuote}Check this URL for more information on Materials <https://docs.google.com/spreadsheets/d/1BpkIh8lLR4TaOs_IP8C-jutvlmWaEN6A8Zj4m4xQn6c>`);
+For better grind find a High Grade Emission (HGE) that has a timer above 10 minutes, the more the merrier. Once you pick all materials in that HGE, close the game (go to the Desktop) and open it again. Enter in supercruise and the closest signal should be the HGE signal. You might need to make a 180 degree turn to go into the HGE. Pick the materials and repeat the process${messageQuote}Check this URL for more information on Materials <https://docs.google.com/spreadsheets/d/1BpkIh8lLR4TaOs_IP8C-jutvlmWaEN6A8Zj4m4xQn6c>`);
 }
 
 function minerals(message) {
