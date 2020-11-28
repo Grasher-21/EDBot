@@ -286,8 +286,9 @@ ${messageQuote}`);
 
 function influence(message) {
     message.reply(`${messageQuote}
-- There is a cap of INF that is resetted every day at server tick +/- at 17:00 UTC.
-- Various activities contribute to the total work done for a Faction in a system. If there is no opposition, you will get a positive influence increase at tick for that Faction.
+Influence (INF) measures the "power" of a Faction within a system. Players can make Factions increase or decrease their INF by doing missions, trading cargo, delivering cartographics and delivering combat bonds and bounties. This is how INF works:
+- There is a daily cap of how much INF a player can increase/decrease for a Faction. That cap is resetted at server tick +/- at 14:00 UTC (this time may change)
+- Various activities contribute to the total work done for a Faction in a system. If there is no opposition, you will get a positive influence increase at server tick for that Faction.
 - There are processes that convert these various activities into "points" at tick. These calculations make some attempt to balance the different activities against each other so that a fair comparison can be done between trade, cartography and bounty hunting as well as mission INF+ points.
 
 All activities are subject to diminishing returns.
@@ -302,14 +303,14 @@ A "made up" example of this:
 - Another group of commanders earn their daily points by profitable trade into the station.
 - The first earns 4 points, the 2nd gets 3. You know the drill by now. A total of 10 more BGS points earned by trade.
 - A pair of dedicated mission runners do an insane amount of work for the day. 
-- Their work is also broken down to 4 + 3 + 2 + 1 = 10 more points.
-
-- A single commander drops several months worth of exploration data.
-- This is way past the soft cap, so gets the 10 points plus an additional 2.
-- Points for the day are 10 + 10 + 10 + 10 plus a bonus 2 for 42 in total. That is a good amount and should gain close to the maximum expected influence for the day.${messageQuote}
+- Their work is also broken down to 4 + 3 + 2 + 1 = 10 more points.${messageQuote}
 `);
 
     message.reply(`${messageQuote}
+- A single commander drops several months worth of exploration data.
+- This is way past the soft cap, so gets the 10 points plus an additional 2.
+- Points for the day are 10 + 10 + 10 + 10 plus a bonus 2 for 42 in total. That is a good amount and should gain close to the maximum expected influence for the day.
+
 Unfortunately, another group of commanders are also working for a lower Faction in the system.
 - 1st commander does 4 points worth of bounty hunting.
 - Another 4 points of trade.
