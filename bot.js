@@ -390,7 +390,7 @@ Stations can pay more than the Max price from Fleet Carriers but it's unsure whe
 
 function mining(message) {
     message.reply(`${messageQuote}cs
-##### Laser Mining (Painite) #####${messageQuote}${messageQuote}----- Hardpoints -----
+##### Laser Mining #####${messageQuote}${messageQuote}----- Hardpoints -----
 Mining Lasers (the more the merrier)
 
 ----- Optional Internal -----
@@ -402,10 +402,11 @@ Cargo Racks -> 100T+ cargo space
 
 ----- Quick Tips -----
 1) Use the prospect on asteroids before using the mining laser for better yield
+2) One of the best spots for Laser Mining is in: HYADES SECTOR DB-X D1-112     2
 ${messageQuote}
 
 ${messageQuote}cs
-##### Deep Core Mining (Void Opals or Low Temperature Diamonds) #####${messageQuote}${messageQuote}----- Hardpoints -----
+##### Deep Core Mining #####${messageQuote}${messageQuote}----- Hardpoints -----
 Seismic Charge Launcher
 Sub-Surface Displacement Missile
 Abrasion Blaster
@@ -425,8 +426,8 @@ Cargo Racks (100T+ cargo space)
 2) Use prospector limpet on the asteroid to see if it has a core
 3) Use seismic charge launcher on the asteroid's fissures
 4) Go AWAY from the asteroid and detonate the charges when the graphic reaches the "good" range
-5) When the asteroid breaks, use abrasion blaster on the surface to release the minerals from the asteroid${messageQuote}
-Go to <http://eddb.io> to find where to get the modules or write **!sites**
+5) When the asteroid breaks, use abrasion blaster on the surface to release the minerals from the asteroid
+6) All ringed planets may be good for deep core mining${messageQuote}Go to <http://eddb.io> to find where to get the modules or write **!sites**
 Mining can earn a lot of money. Type **!minerals** for more information`);
 }
 
