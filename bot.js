@@ -313,7 +313,7 @@ A "made up" example of this:
 - This is way past the soft cap, so gets the 10 points plus an additional 2.
 - Points for the day are 10 + 10 + 10 + 10 plus a bonus 2 for 42 in total. That is a good amount and should gain close to the maximum expected influence for the day.
 
-Unfortunately, another group of commanders are also working for a lower Faction in the system.
+Unfortunately, another group of commanders are also working for another Faction in the system.
 - 1st commander does 4 points worth of bounty hunting.
 - Another 4 points of trade.
 - They worked hard at missions and did 9 points worth.
