@@ -227,7 +227,7 @@ ${messageQuote}`);
 
 function exploration(message) {
     message.reply(`${messageQuote}
-Exploration can be a good way to get some money and mark yourself in the Galaxy by discovering systems and planets that no one ever saw. Remember, this game has billions of systems and only **0.05%** of the Galaxy has been explored by commanders...
+Exploration can be a good way to get some Credits and mark yourself in the Galaxy by discovering systems and planets that no one ever saw. Remember, this game has billions of systems and only **0.05%** of the Galaxy has been explored by commanders...
 
 Recommended outfitting for Exploration:
 ----- Hardpoints -----
@@ -244,8 +244,8 @@ Use rating D on all other Core modules for less mass which improves your jump ra
 ----- Optional Internal -----
 Fuel Scoop (the best you can get)
 Guardian Frame Shift Driver Booster (having the class 5H it will boost your jump range by 10.5 LY)
-Shield Generator (optional)
-Corrosion Resistant Cargo Rack or Cargo Rack (16T should be fine)
+Shield Generator (optional although recommended)
+Corrosion Resistant Cargo Rack or Cargo Rack (16T should be fine and if needed, you can synthesize limpets)
 Auto Field-Maintenance Unit (the more the merrier)
 Planetary Vehicle Hangar (don't forget to buy the SRV)
 Repair Limpet Controller (one is enough)
@@ -253,8 +253,8 @@ Detailed Surface Scanner
 
 PS: have some synthesis materials for limpets in case you need. More information in !synthesis
 
-Credits you can get when you deliver Cartographics to stations by discovering planets:${messageQuote}
-https://drive.google.com/file/d/1d1wNWVBJKBSO9ufvDxmcZ_D1gxcX4kX-/view?usp=sharing `);
+Cartographics is the data from what you have explored, scanned and mapped. Space stations pays quite well for this data.
+This chart shows how much Credits you can earn just by delivering Cartographic data:${messageQuote}<https://drive.google.com/file/d/1d1wNWVBJKBSO9ufvDxmcZ_D1gxcX4kX->`);
 }
 
 function guardians(message) {
