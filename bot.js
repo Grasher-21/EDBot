@@ -196,8 +196,8 @@ INFLUENCE:
 - The Faction will expand to the closest system that has 6 or less Factions. If all systems within 20 LY range have 7 Factions, then it will invade against a non-native Faction in a system where that non-native is the lowest influence anywhere within 20 LY range. That target Faction must NOT be in a conflict or in cooldown from one (1 day).
 - Conflicts will be decided in a "Best Of 7". Whoever reaches 4 daily wins, stays in the system while the other one gets removed.
 - When in a war, INF of both Factions are locked until the war ends, meaning missions will not have an impact on INF.
-- Note: Cartographics will only help the Faction that controls the station and if that Faction is in a war, it won't help increasing INF for that Faction.
-- Note: Combat Bonds / Bounties will not help the Faction increase INF if it's in a war.
+- Cartographics will only help the Faction that controls the station and if that Faction is in a war, it won't help increasing INF for that Faction.
+- Combat Bonds / Bounties will not help the Faction increase INF if it's in a war.
 ${messageQuote}`);
 
     message.reply(`${messageQuote}
@@ -323,8 +323,7 @@ ${messageQuote}`);
 }
 
 function materials(message) {
-    message.reply(`Check this URL for more information <https://docs.google.com/spreadsheets/d/1BpkIh8lLR4TaOs_IP8C-jutvlmWaEN6A8Zj4m4xQn6c/edit#gid=1798481633>
-${messageQuote}
+    message.reply(`${messageQuote}
 ----- Raw Materials (Biological Sites Only) -----
 Yttrium        OUTOTZ LS-K D8-3     B 5 A     (Distance from Sol: 1714 LY)
 Polonium       HIP 36601            C 1 A     (Distance from Sol: 1599 LY)
@@ -349,10 +348,10 @@ Proto Heat Radiators            Boom               Alliance
 Imperial Shielding              Boom               Empire                
 Core Dynamic Composites         Boom               Federation            
 
-PS: Filter the galaxy map in order to show State and Allegiance systems
+PS: Filter the galaxy map in order to show State and Allegiance systems${messageQuote}`);
 
-PS: For better grind, once you pick all materials in a HGE, close the game and reopen it. You will login near the HGE. Enter in supercruise and the closest signal should be the HGE signal. Make a 180 degree loop and go into the HGE. Pick the materials and repeat
-${messageQuote}`);
+    message.reply(`${messageQuote}
+For better grind find a High Grade Emission (HGE) that has a timer above 10 minutes, the more the merrier. Once you pick all materials in that HGE, close the game (go to the Desktop) and open it again. Enter in supercruise and the closest signal should be the HGE signal. You might need to make a 180 degree loop to go into the HGE. Pick the materials and repeat the process${messageQuote}Check this URL for more information on Materials <https://docs.google.com/spreadsheets/d/1BpkIh8lLR4TaOs_IP8C-jutvlmWaEN6A8Zj4m4xQn6c>`);
 }
 
 function minerals(message) {
