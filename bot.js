@@ -481,16 +481,16 @@ ${messageQuote}`);
 
 function thargoids(message) {
     message.reply(`${messageQuote}cs
-##### Thargoid Barnacles (Big Forest) #####${messageQuote}HYADES SECTOR AQ-Y D81     C 2     (Hotspot 3)     (Distance from Sol: 271 LY)
+##### Thargoid Barnacles (Big Forest) #####${messageQuote}${messageQuote}HYADES SECTOR AQ-Y D81     C 2     (Hotspot 3)     (Distance from Sol: 271 LY)${messageQuote}
 ${messageQuote}cs
-##### Thargoid Sensors #####${messageQuote}LTT 1935     6 A     (Distance from Sol: 71 LY)     (Sensor per relog: 1)
-HIP 17403     A 4 A     (Distance from Sol: 411 LY)     (Sensor per relog: 3)
+##### Thargoid Sensors #####${messageQuote}${messageQuote}LTT 1935     6 A     (Distance from Sol: 71 LY)     (Sensor per relog: 1)
+HIP 17403     A 4 A     (Distance from Sol: 411 LY)     (Sensor per relog: 3)${messageQuote}
 ${messageQuote}cs
-##### Thargoid Structure (Active) #####${messageQuote}PLEIADES SECTOR MC-V C2-0     1 A     (Distance from Sol: 383 LY)
+##### Thargoid Structure (Active) #####${messageQuote}${messageQuote}PLEIADES SECTOR MC-V C2-0     1 A     (Distance from Sol: 383 LY)${messageQuote}
 ${messageQuote}cs
-##### Thargoid Combat #####${messageQuote}PLEIADES SECTOR HR-W D1-79     (Distance from Sol: 382 LY)     (Pleiades Nebula)
+##### Thargoid Combat #####${messageQuote}${messageQuote}PLEIADES SECTOR HR-W D1-79     (Distance from Sol: 382 LY)     (Pleiades Nebula)
 MUSCA DARK REGION PJ-P B6-1     (Distance from Sol: 520 LY)     (Musca Nebula)
-HIP 23759     (Distance from Sol: 891 LY)     (Witch Head Nebula)
+HIP 23759     (Distance from Sol: 891 LY)     (Witch Head Nebula)${messageQuote}
 ${messageQuote}cs
-##### More Commands for Thargoids #####${messageQuote}!hearts`);
+##### More Commands for Thargoids #####${messageQuote}${messageQuote}!hearts${messageQuote}`);
 }
