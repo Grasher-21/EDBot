@@ -286,7 +286,9 @@ ${messageQuote}`);
 
 function influence(message) {
     message.reply(`${messageQuote}
-Influence (INF) measures the "power" of a Faction within a system. Players can make Factions increase or decrease their INF by doing missions, trading cargo, delivering cartographics and delivering combat bonds and bounties. This is how INF works:
+Influence (INF) measures the "power" of a Faction within a system. Players can make Factions increase or decrease their INF by doing missions, trading cargo, delivering cartographics and delivering combat bonds and bounties.
+
+This is how INF works:
 - There is a daily cap of how much INF a player can increase/decrease for a Faction. That cap is resetted at server tick +/- at 14:00 UTC (this time may change)
 - Various activities contribute to the total work done for a Faction in a system. If there is no opposition, you will get a positive influence increase at server tick for that Faction.
 - There are processes that convert these various activities into "points" at tick. These calculations make some attempt to balance the different activities against each other so that a fair comparison can be done between trade, cartography and bounty hunting as well as mission INF+ points.
