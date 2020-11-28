@@ -492,5 +492,9 @@ ${messageQuote}cs
 MUSCA DARK REGION PJ-P B6-1     (Distance from Sol: 520 LY)     (Musca Nebula)
 HIP 23759     (Distance from Sol: 891 LY)     (Witch Head Nebula)${messageQuote}
 ${messageQuote}cs
+##### Others #####${messageQuote}${messageQuote}- Non Human Signal Sources (NHSS) may or may not have Thargoids. Sometimes it can only be Scouts. However, all NHSS with the Salvage Icon is a 100% guarantee that a Thargoid will be there
+- Thargoid Probes can be found in NHSS. Look for NHSS Threat Level 5 or 7 for better spawn rates of the Thargoid Probe
+- Thargoid Links, Resin, Biological Matter and Technology Sample can be found in Thargoid Structures${messageQuote}
+${messageQuote}cs
 ##### More Commands for Thargoids #####${messageQuote}${messageQuote}!hearts${messageQuote}`);
 }
