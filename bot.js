@@ -251,13 +251,13 @@ Planetary Vehicle Hangar (don't forget to buy the SRV)
 Repair Limpet Controller (one is enough)
 Detailed Surface Scanner
 
-PS: have some synthesis materials for limpets in case you need. More information in !synthesis
-
-Cartographics is the data from what you have explored, scanned and mapped. Space stations pays quite well for this data.
-
-PS: if you die, all your data is lost, meaning all your Cartographics disappeared. If you mapped a system or a planet for the first time and you died before delivering the Cartographics, your name won't be in the "First Discovered by" nor "First Mapped by". Only when you deliver the data it will display your name in such systems.${messageQuote}`);
+PS: have some synthesis materials for limpets in case you need. More information in !synthesis${messageQuote}`);
 
     message.reply(`${messageQuote}
+Cartographics is the data from what you have explored, scanned and mapped. Space stations pays quite well for this data.
+
+If you die, all your data is lost, meaning all your Cartographics is lost. If you mapped a system or a planet for the first time and you died before delivering the Cartographics, your name won't be in the "First Discovered by" nor "First Mapped by". Only when you deliver the data it will display your name in such systems.
+
 This link shows how much Credits you can earn just by delivering Cartographic data:${messageQuote}<https://drive.google.com/file/d/1d1wNWVBJKBSO9ufvDxmcZ_D1gxcX4kX->`);
 }
 
