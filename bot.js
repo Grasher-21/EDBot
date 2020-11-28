@@ -428,7 +428,7 @@ Cargo Racks (100T+ cargo space)
 4) Go AWAY from the asteroid and detonate the charges when the graphic reaches the "good" range
 5) When the asteroid breaks, use abrasion blaster on the surface to release the minerals from the asteroid
 6) All ringed planets may be good for deep core mining${messageQuote}Go to <http://eddb.io> to find where to get the modules or write **!sites**
-Mining can earn a lot of money. Type **!minerals** for more information`);
+A lot of Credits can be made from mining. Type **!minerals** for more information`);
 }
 
 function ranks(message) {
@@ -464,7 +464,7 @@ ${messageQuote}cs
 ${messageQuote}cs
 ###### Full details for commodities, market prices #####${messageQuote}<https://inara.cz/galaxy-nearest/>
 ${messageQuote}cs
-###### Laser mining hotspots & market data #####${messageQuote}<https://edtools.cc/miner?c=83&s=Hyades%20Sector%20DB-X%20d1-112&mp=700000>
+###### Laser mining hotspots & market data #####${messageQuote}<https://edtools.cc/miner?c=83&s=Hyades%20Sector%20DB-X%20d1-112>
 ${messageQuote}cs
 ###### Engineers #####${messageQuote}<https://inara.cz/galaxy-engineers/>
 ${messageQuote}cs
