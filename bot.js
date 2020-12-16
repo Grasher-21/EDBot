@@ -61,6 +61,10 @@ bot.on('message', message => {
                 bgs(message);
                 break;
 
+            case '!combat':
+                combat(message);
+                break;
+
             case '!engineer':
             case '!engineers':
                 engineers(message);
@@ -102,7 +106,7 @@ bot.on('message', message => {
 
             case '!path':
             case '!paths':
-                paths(message):
+                paths(message);
                 break;
 
             case '!rank':
@@ -455,7 +459,8 @@ A lot of Credits can be made from mining. Type **!minerals** for more informatio
 function paths(message) {
     message.reply(`${messageQuote}
 Steam Shortcut: steam://rungameid/359320
-Epic Shortcut: com.epicgames.launcher://apps/9c203b6ed35846e8a4a9ff1e314f6593?action=launch&silent=true${messageQuote}`);
+Epic Shortcut: com.epicgames.launcher://apps/9c203b6ed35846e8a4a9ff1e314f6593?action=launch&silent=true
+${messageQuote}`);
 }
 
 function ranks(message) {
