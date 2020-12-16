@@ -100,6 +100,11 @@ bot.on('message', message => {
                 mining(message);
                 break;
 
+            case '!path':
+            case '!paths':
+                paths(message):
+                break;
+
             case '!rank':
             case '!ranks':
                 ranks(message);
@@ -165,6 +170,7 @@ function help(message) {
     message.reply(`these are the available commands:
 ${messageQuote}
 !bgs
+!combat
 !engineers
 !exploration
 !guardians
@@ -173,6 +179,7 @@ ${messageQuote}
 !materials
 !minerals
 !mining
+!paths
 !ranks
 !scanners
 !ships
@@ -217,6 +224,20 @@ SUPER POWERS:
 
 You can see the Super Power ranks here: ${messageQuote}<https://drive.google.com/file/d/1lmjWRO1JiiIsdleG7tmnUSzg5nEs244w>
 For more information on how INFLUENCE works -> **!influence**`);
+}
+
+function combat(message) {
+    message.reply(`${messageQuote}
+There are several different ways of combat:
+- NPC human ships
+- Thargoid interceptors
+
+Combat gives you Credits for taking down the opponent (when they're marked as **Wanted**):
+- Combat Bonds are obtained in Conflict Zones by shooting ships of a Faction **after picking a side** to fight for.
+- Combat Bounties are obtained when killing **Wanted** ships in Navigation Beacons, Resource Extraction Sites, etc. Using a Kill Warrant Scanner will, sometimes, make "Clean Ships" be marked as wanted. Using the same scanner it may also increase the payout of a target.
+
+For NPC human ships, one of the recommended ships is the Federal Corvette. It has a lot of hardpoints, utility and optional modules.
+For Thargoid interceptos Krait MK II and Alliance Chieftain are considered the best ships${messageQuote}`);
 }
 
 function engineers(message) {
@@ -429,6 +450,12 @@ Cargo Racks (100T+ cargo space)
 5) When the asteroid breaks, use abrasion blaster on the surface to release the minerals from the asteroid
 6) All ringed planets may be good for deep core mining${messageQuote}Go to <http://eddb.io> to find where to get the modules or write **!sites**
 A lot of Credits can be made from mining. Type **!minerals** for more information`);
+}
+
+function paths(message) {
+    message.reply(`${messageQuote}
+Steam Shortcut: steam://rungameid/359320
+Epic Shortcut: com.epicgames.launcher://apps/9c203b6ed35846e8a4a9ff1e314f6593?action=launch&silent=true${messageQuote}`);
 }
 
 function ranks(message) {
