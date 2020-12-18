@@ -4,7 +4,8 @@ const bot = new Discord.Client();
 const userAdmin = '101462082016260096';
 const botId = '779689202245828608';
 
-const eliteDangerousChannelId = '577875159596400660';
+const eliteDangerousChannelIdRandomStuff = '577875159596400660';
+const eliteDangerousChannelIdChillGroup = '789535469523828756';
 const botLogChannelId = '779695530514448384';
 
 const botCommand = '!';
@@ -37,7 +38,8 @@ bot.on('message', message => {
         }
     }
 
-    if (message.channel.id == eliteDangerousChannelId && message.content.startsWith(botCommand) && message.author.id != botId) {
+    if ((message.channel.id == eliteDangerousChannelIdRandomStuff && message.content.startsWith(botCommand) && message.author.id != botId) ||
+        (message.channel.id == eliteDangerousChannelIdChillGroup && message.content.startsWith(botCommand) && message.author.id != botId)) {
         logCommandRequest(message);
 
         var command = message.content.split(' ');
@@ -102,6 +104,11 @@ bot.on('message', message => {
 
             case '!mining':
                 mining(message);
+                break;
+
+            case '!passenger':
+            case '!passengers':
+                passengers(message);
                 break;
 
             case '!path':
@@ -183,6 +190,7 @@ ${messageQuote}
 !materials
 !minerals
 !mining
+!passengers
 !paths
 !ranks
 !scanners
@@ -454,6 +462,37 @@ Cargo Racks (100T+ cargo space)
 5) When the asteroid breaks, use abrasion blaster on the surface to release the minerals from the asteroid
 6) All ringed planets may be good for deep core mining${messageQuote}Go to <http://eddb.io> to find where to get the modules or write **!sites**
 A lot of Credits can be made from mining. Type **!minerals** for more information`);
+}
+
+function passengers(message) {
+    message.reply(`${messageQuote}
+One of the best methods to earn Credits is Passenger Missions at Robigo. The best ship for this is a Python.
+
+----- Core Internal -----
+Frame Shift Drive (rating 5 A if possible, no need to engineer it for this)
+
+----- Optional Internal -----
+- 6D Business Class Passenger Cabin
+- 6D Business Class Passenger Cabin
+- 6D Business Class Passenger Cabin
+- 5E Economy Class Passenger Cabin
+- 5E Economy Class Passenger Cabin
+- 4E Economy Class Passenger Cabin
+- 3E Economy Class Passenger Cabin
+- 3E Economy Class Passenger Cabin
+- 2E Economy Class Passenger Cabin
+- 1? Fit whatever you think it's best, Fuel Scoop, perhaps or Auto-Docking assist ... -.-'
+
+----- System & Station -----
+System: Robigo
+Station: Robigo Mines
+
+----- Quick Tips -----
+1) Pick all Passenger Missions you can get that goes to "Sirius Atmosphere" tourist site.
+2) Scan the beacon (it takes like 5 - 10 seconds)
+3) Head back to Robigo Mines and complete the mission
+4) This build has NO SHIELDS meaning every small impact will damage your hull. Passengers won't be happy with this and your paycut will be reduced
+5) Don't go over 100% heat, Passengers will not be happy either. Use a Heatsink Launcher if you need${messageQuote}`);
 }
 
 function paths(message) {
