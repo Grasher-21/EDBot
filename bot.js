@@ -106,6 +106,11 @@ bot.on('message', message => {
                 mining(message);
                 break;
 
+            case '!module':
+            case '!modules':
+                modules(message);
+                break;
+
             case '!passenger':
             case '!passengers':
                 passengers(message);
@@ -190,6 +195,7 @@ ${messageQuote}
 !materials
 !minerals
 !mining
+!modules
 !passengers
 !paths
 !ranks
@@ -463,6 +469,9 @@ Cargo Racks (100T+ cargo space)
 6) All ringed planets may be good for deep core mining${messageQuote}Go to <http://eddb.io> to find where to get the modules or write **!sites**
 A lot of Credits can be made from mining. Type **!minerals** for more information`);
 }
+
+function modules(message) {
+    message.reply(`Go to <http://eddb.io> to find where to get the modules`);
 
 function passengers(message) {
     message.reply(`${messageQuote}
