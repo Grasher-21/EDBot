@@ -472,6 +472,7 @@ A lot of Credits can be made from mining. Type **!minerals** for more informatio
 
 function modules(message) {
     message.reply(`Go to <http://eddb.io> to find where to get the modules`);
+}
 
 function passengers(message) {
     message.reply(`${messageQuote}
