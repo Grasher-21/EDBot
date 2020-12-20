@@ -447,9 +447,7 @@ Rutile                               19,970
 Serendibite                       1,726,290
 Taaffeite                           520,770
 Uraninite                            28,650
-Void Opal                         1,352,140${messageQuote}
-
-Stations can pay more than the Max price from Fleet Carriers but it's unsure when and which Station will do that. It all depends on the system state, security, etc.
+Void Opal                         1,352,140${messageQuote}Stations can pay more than the Max price from Fleet Carriers but it's unsure when and which Station will do that. It all depends on the system state, security, etc.
 Check <https://edtools.cc/miner?c=83&s=Sol&mp=1> to see the current price of a certain mineral or <https://inara.cz/galaxy-commodities/> and pick a mineral to see their price`);
 }
 
