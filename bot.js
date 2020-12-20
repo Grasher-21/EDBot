@@ -271,15 +271,15 @@ Elite Dangerous have several different activities. You can do Exploration, Tradi
 To earn Credits, you will need to do one of those. The table below shows the average Credit per Hour per Activity.
 
 Activity ---------------- Average Units Per Hour -------- Credits Earned Per Hour
-Exploration               20 - 30 Systems                  15,000,000
+Exploration               20 - 30 Systems                 15,000,000
 Combat (Human Ships)      n/a                             n/a
-Thargoid (Cyclops)        4 - 5 kills                      36,000,000
-Thargoid (Basilisk)       4 kills                          96,000,000
-Laser Mining              250 +/- Painite                  60,000,000
+Thargoid (Cyclops)        4 - 5 kills                     36,000,000
+Thargoid (Basilisk)       4 kills                         96,000,000
+Laser Mining              250 +/- Painite                 60,000,000
 Laser Mining              550 +/- Platinum                162,000,000
-Deep Core Mining          90 Minerals                      63,000,000
-Passenger Missions        5 - 6 Trips back and forth       90,000,000
-Trading / Hauling         Bauxite and Gallite between      80,000,000
+Deep Core Mining          90 Minerals                     63,000,000
+Passenger Missions        5 - 6 Trips back and forth      90,000,000
+Trading / Hauling         Bauxite and Gallite between     80,000,000
                           systems Bandizel and Gauna${messageQuote}`)
 }
 
