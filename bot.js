@@ -67,6 +67,11 @@ bot.on('message', message => {
                 combat(message);
                 break;
 
+            case '!activities':
+            case '!credits':
+                credits(message);
+                break;
+
             case '!engineer':
             case '!engineers':
                 engineers(message);
@@ -185,8 +190,10 @@ function invalidCommand(message) {
 function help(message) {
     message.reply(`these are the available commands:
 ${messageQuote}
+!activities
 !bgs
 !combat
+!credits
 !engineers
 !exploration
 !guardians
@@ -256,6 +263,25 @@ Combat gives you Credits for taking down the opponent (when they're marked as **
 
 For NPC human ships, one of the recommended ships is the Federal Corvette. It has a lot of hardpoints, utility and optional modules.
 For Thargoid interceptos Krait MK II and Alliance Chieftain are considered the best ships${messageQuote}`);
+}
+
+function credits(message) {
+    message.reply(`${messageQuote}
+Elite Dangerous have several different activities. You can do Exploration, Trading / Hauling, Combat, Missions, Mining, etc.
+To earn Credits, you will need to do one of those. The table below shows the average Credit per Hour per Activity.
+
+Activity ------------- Average Units Per Hour -------- Credits Earned Per Hour
+Exploration            20 - 30 Systems                  15,000,000
+Combat                 n/a                             n/a
+Thargoid (Cyclops)     4 - 5 kills                      36,000,000
+Thargoid (Basilisk)    4 kills                          96,000,000
+Laser Mining           250 +/- Painite                  60,000,000
+Laser Mining           550 +/- Platinum                162,000,000
+Deep Core Mining       90 Minerals                      63,000,000
+Passenger Missions     5 - 6 Trips back and forth       90,000,000
+Trading / Hauling      Bauxite and Gallite between     
+                       systems Bandizel and Gauna
+${messageQuote}`)
 }
 
 function engineers(message) {
@@ -422,9 +448,10 @@ Rutile                               19,970
 Serendibite                       1,726,290
 Taaffeite                           520,770
 Uraninite                            28,650
-Void Opal                         1,352,140
+Void Opal                         1,352,140${messageQuote}
 
-Stations can pay more than the Max price from Fleet Carriers but it's unsure when and which Station will do that. It all depends on the system state, security, etc${messageQuote}`);
+Stations can pay more than the Max price from Fleet Carriers but it's unsure when and which Station will do that. It all depends on the system state, security, etc.
+Check <https://edtools.cc/miner?c=83&s=Sol&mp=1> to see the current price of a certain mineral or <https://inara.cz/galaxy-commodities/> and pick a mineral to see their price`);
 }
 
 function mining(message) {
