@@ -279,9 +279,8 @@ Laser Mining           250 +/- Painite                  60,000,000
 Laser Mining           550 +/- Platinum                162,000,000
 Deep Core Mining       90 Minerals                      63,000,000
 Passenger Missions     5 - 6 Trips back and forth       90,000,000
-Trading / Hauling      Bauxite and Gallite between     
-                       systems Bandizel and Gauna
-${messageQuote}`)
+Trading / Hauling      Bauxite and Gallite between      80,000,000
+                       systems Bandizel and Gauna${messageQuote}`)
 }
 
 function engineers(message) {
