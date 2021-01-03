@@ -146,6 +146,11 @@ bot.on('message', message => {
                 sites(message);
                 break;
 
+            case '!stationRepair':
+            case '!stationsRepair':
+                stationRepair(message);
+                break;
+
             case '!synthesis':
                 synthesis(message);
                 break;
@@ -209,6 +214,7 @@ ${messageQuote}
 !scanners
 !ships
 !sites
+!stationRepair
 !synthesis
 !thargoids
 ${messageQuote}
@@ -578,6 +584,20 @@ ${messageQuote}cs
 ###### Fleet Carriers #####${messageQuote}<https://cmdrs-toolbox.com/fleet-carrier-calculator/>`);
 }
 
+function stationRepair(message) {
+    message.reply(`${messageQuote}cs
+##### Station Repair #####${messageQuote}${messageQuote}Thargoids often invade systems. When that happens, the system will be with the state of "Infested". If an insufficient number of Thargoid ships are destroyed in a certain period of time, the system will enter the state of "Incursion". When this happens, space stations will be damaged, services in the stations won't be operational and the only missions available are the ones to rescue passengers, transporting them from the space station to a megaship. Anti-Xeno Conflict Zones will appear in the system and for each week the AXCZs remain, another station in the same system is attacked.
+
+To start repairing the space stations, the Infested state must mention "No Thargoid Presence". Damaged stations can be re-attacked before repairs are complete, which voids all repair work done prior to the new attack. Thus, it is not recommended to start repairing a station until the Incursion has been cleared. Only then the Background Simulator will start with the repair. Commanders may help by delivering the commodities that station requires.
+
+When in the Infested state, these are the severity levels:
+- Massive Thargoid Presence
+- Significant Thargoid Presence
+- Moderate Thargoid Presence
+- Marginal Thargoid Presence
+- No Thargoid Presence${messageQuote}`);
+}
+
 function synthesis(message) {
     message.reply(`${messageQuote}
 synthesis is under construction :D
@@ -597,9 +617,10 @@ ${messageQuote}cs
 MUSCA DARK REGION PJ-P B6-1     (Distance from Sol: 520 LY)     (Musca Nebula)
 HIP 23759     (Distance from Sol: 891 LY)     (Witch Head Nebula)${messageQuote}
 ${messageQuote}cs
-##### Others #####${messageQuote}${messageQuote}- Non Human Signal Sources (NHSS) may or may not have Thargoids. Sometimes it can only be Scouts. However, all NHSS with the Salvage Icon is a 100% guarantee that a Thargoid will be there
+##### Others #####${messageQuote}${messageQuote}- Non Human Signal Sources (NHSS) might have Thargoids. Sometimes it can only be Scouts. However, all NHSS with the Salvage Icon is a 100% guarantee that a Thargoid will be there
 - Thargoid Probes can be found in NHSS. Look for NHSS Threat Level 5 or 7 for better spawn rates of the Thargoid Probe
 - Thargoid Links, Resin, Biological Matter and Technology Sample can be found in Thargoid Structures${messageQuote}
 ${messageQuote}cs
-##### More Commands for Thargoids #####${messageQuote}${messageQuote}!hearts${messageQuote}`);
+##### More Commands for Thargoids #####${messageQuote}${messageQuote}!hearts
+!stationRepair{messageQuote}`);
 }
