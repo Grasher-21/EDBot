@@ -622,5 +622,5 @@ ${messageQuote}cs
 - Thargoid Links, Resin, Biological Matter and Technology Sample can be found in Thargoid Structures${messageQuote}
 ${messageQuote}cs
 ##### More Commands for Thargoids #####${messageQuote}${messageQuote}!hearts
-!stationRepair{messageQuote}`);
+!stationRepair${messageQuote}`);
 }
