@@ -304,8 +304,9 @@ Meeting Requirements:
 Unlocking Requirements:
 - what you need to do for the Engineer, let's say some kind of mission or task, in order for you to be able to upgrade your modules
 
-In other words: upgrade your module to level 5 (if possible for that module) and then add the Experimental Effect (if possible for that module).
+In other words: upgrade your module to level 5 (if possible for that module) and then add the Experimental Effect (if possible for that module).${messageQuote}`);
 
+    message.reply(`${messageQuote}
 ----- Quick Tips -----
 1) Almost all Engineers accept Cartographics Data to increase the access levels as well as selling materials
 2) Upgrading your modules at the Engineer's site will increase the access levels, while upgrading remotely will not, so make sure to do remote upgrades only after you're already at full access
