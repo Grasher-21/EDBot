@@ -291,8 +291,25 @@ Trading / Hauling         Bauxite and Gallite between     80,000,000
 
 function engineers(message) {
     message.reply(`${messageQuote}
-engineers is under construction :D
-${messageQuote}`);
+After getting the best modules for your ship, what is left is the Engineering. This will boost the advantages of those modules and even add extra effects. However, it does have some downsides as well, for example: you may boost your shield generator to withstand more damage with the cost of using more power in return.
+
+Almost all modules can be engineered, and from those, almost all of them can also have experimental effects. There's no "best engineering" for a module, it all depends on the purpose of what you want or need, for example: if you want exploration, you may want to engineer your modules as light-weight, if you want for combat, you may want to engineer them for integrity or other kind of upgrades, and so on.
+
+There are in total 25 engineers (for now). Most of them are located within the bubble, although some are in the Colonia region, basically 20,000 LY away.
+All Engineers have "meeting requirements" and "unlocking requirements".
+
+Meeting Requirements:
+- what you need to do to know about the existence of the Engineer
+
+Unlocking Requirements:
+- what you need to do for the Engineer, let's say some kind of mission or task, in order for you to be able to upgrade your modules
+
+----- Quick Tips -----
+1) Almost all Engineers accept Cartographics Data to increase the access levels as well as selling materials
+2) Upgrading your modules at the Engineer's site will increase the access levels, while upgrading remotely will not, so make sure to do remote upgrades only after you're already at full access
+3) To do remote upgrades, you must pin the blueprint. Then you can access it when you're docked anywhere else. You can only pin ONE blueprint per Engineer, no matter what type of modules
+${messageQuote}
+You can check the full Engineer list here <https://inara.cz/galaxy-engineers/> along with the systems they're located at, meeting and unlocking requirements`);
 }
 
 function exploration(message) {
