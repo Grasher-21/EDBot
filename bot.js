@@ -91,6 +91,10 @@ bot.on('message', message => {
                 hearts(message);
                 break;
 
+            case '!hud':
+                hud(message);
+                break;
+
             case '!influence':
                 influence(message);
                 break;
@@ -203,6 +207,7 @@ ${messageQuote}
 !exploration
 !guardians
 !hearts
+!hud
 !influence
 !materials
 !minerals
@@ -372,6 +377,13 @@ function hearts(message) {
     message.reply(`${messageQuote}
 hearts is under construction :D
 ${messageQuote}`);
+}
+
+function hud(message) {
+    message.reply(`${messageQuote}
+The ship's HUD have several icons, mainly when there's damaged involved. Open the URL for an image with the full list along with radar's icons
+${messageQuote}
+<https://drive.google.com/file/d/1oBIakqBSpN6avUWmdvhdFNQzsYZmS-o9>`);
 }
 
 function influence(message) {
