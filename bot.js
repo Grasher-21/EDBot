@@ -381,7 +381,7 @@ ${messageQuote}`);
 
 function hud(message) {
     message.reply(`${messageQuote}
-The ship's HUD have several icons, mainly when there's damaged involved. Open the URL for an image with the full list along with radar's icons
+The ship's HUD have several icons, mainly when there's damaged involved. Open the URL for the full list along with radar's icons
 ${messageQuote}<https://drive.google.com/file/d/1oBIakqBSpN6avUWmdvhdFNQzsYZmS-o9>`);
 }
 
