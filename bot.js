@@ -612,7 +612,9 @@ ${messageQuote}cs
 ${messageQuote}cs
 ###### Materials for Engineering #####${messageQuote}<https://docs.google.com/spreadsheets/d/1BpkIh8lLR4TaOs_IP8C-jutvlmWaEN6A8Zj4m4xQn6c/>
 ${messageQuote}cs
-###### Fleet Carriers #####${messageQuote}<https://cmdrs-toolbox.com/fleet-carrier-calculator/>`);
+###### Fleet Carriers #####${messageQuote}<https://cmdrs-toolbox.com/fleet-carrier-calculator/>
+${messageQuote}cs
+###### Journal Limpet (Data share) #####${messageQuote}<https://journal-limpet.com/>`);
 }
 
 function stationRepair(message) {
