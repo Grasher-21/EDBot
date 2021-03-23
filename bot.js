@@ -657,7 +657,8 @@ When in the Infested state, these are the severity levels:
 function suits(message) {
     message.reply(`${messageQuote}
 There are in total 3 suits available. Each suit has specific advantages for certain activities. Be sure to wear the right one for what you will be doing.
-Suit's name ------------------- Activity
+
+Name -------------------------- Activity
 Supratech Artemis               Exploration
 Dominator                       Combat
 Maverick                        Scavenging
@@ -701,8 +702,8 @@ Name ------------------ Activity
 Genetic Sampler         Collects and indexes samples from living organisms
 Arc Cutter              Generates a beam designed to cut through metal
 Profile Analyser        Scans a target's data for basic personal information
-                        It can also be used to clone security profiles
-Energy Link             Transfers energy between suit and target socket
+                        It can also be used to clone security's profiles
+Energy Link             Transfers energy between the suit and a target socket
                         It can also discharge electric pulses over short distance
 
 More information will be added when Odyssey is released.${messageQuote}`);
