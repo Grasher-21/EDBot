@@ -656,13 +656,13 @@ When in the Infested state, these are the severity levels:
 
 function suits(message) {
     message.reply(`${messageQuote}
-There are 3 suits that a commander can wear. Each suit has a specific advantages for certain activities. Be sure to wear the right one for what you will be doing.
+There are in total 3 suits available. Each suit has specific advantages for certain activities. Be sure to wear the right one for what you will be doing.
 Suit's name ------------------- Activity
 Supratech Artemis               Exploration
 Dominator                       Combat
 Maverick                        Scavenging
 
-Suits can also have customised attachments such as lanterns, night vision, holsters and so on.
+Suits can be customised with different colors or patterns and also have customised attachments such as lanterns, night vision, holsters and so on.
 More information will be added when Odyssey is released.${messageQuote}`);
 }
 
