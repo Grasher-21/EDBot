@@ -706,6 +706,7 @@ Energy Link             Transfers energy between suit and target socket
                         It can also discharge electric pulses over short distance
 
 More information will be added when Odyssey is released.${messageQuote}`);
+}
 
 function weapons(message) {
     message.reply(`${messageQuote}
@@ -713,3 +714,4 @@ There are in total <number to be updated> combat weapons available. Each weapon 
 Weapons can also be engineered to boost it's performance.
 
 More information will be added when Odyssey is released.${messageQuote}`);
+}
