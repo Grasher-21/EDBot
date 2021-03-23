@@ -155,6 +155,11 @@ bot.on('message', message => {
                 stationRepair(message);
                 break;
 
+            case '!suit':
+            case '!suits':
+                suits(message);
+                break;
+
             case '!synthesis':
                 synthesis(message);
                 break;
@@ -162,6 +167,16 @@ bot.on('message', message => {
             case '!thargoid':
             case '!thargoids':
                 thargoids(message);
+                break;
+
+            case '!tool':
+            case '!tools':
+                tools(message);
+                break;
+
+            case '!weapon':
+            case '!weapons':
+                weapons(message);
                 break;
 
             default:
@@ -220,8 +235,11 @@ ${messageQuote}
 !ships
 !sites
 !stationRepair
+!suits
 !synthesis
 !thargoids
+!tools
+!weapons
 ${messageQuote}
 `)
 };
@@ -282,16 +300,20 @@ Elite Dangerous have several different activities. You can do Exploration, Tradi
 To earn Credits, you will need to do one of those. The table below shows the average Credit per Hour per Activity.
 
 Activity ---------------- Average Units Per Hour -------- Credits Earned Per Hour
-Exploration               20 - 30 Systems                 15,000,000
-Combat (Human Ships)      n/a                             n/a
-Thargoid (Cyclops)        4 - 5 kills                     36,000,000
-Thargoid (Basilisk)       4 kills                         96,000,000
-Laser Mining              250 +/- Painite                 60,000,000
-Laser Mining              550 +/- Platinum                162,000,000
-Deep Core Mining          90 Minerals                     63,000,000
-Passenger Missions        5 - 6 Trips back and forth      90,000,000
-Trading / Hauling         Bauxite and Gallite between     80,000,000
-                          systems Bandizel and Gauna${messageQuote}`)
+Exploration               20 - 30 Systems                  15,000,000
+Combat (Human Ships)      n/a stacking missions           200,000,000
+Thargoid (Cyclops)        4 - 5 kills                      36,000,000
+Thargoid (Basilisk)       4 kills                          96,000,000
+Laser Mining              250 +/- Painite                  60,000,000 [1]
+Laser Mining              875 +/- Platinum                250,000,000 [1]
+Deep Core Mining          90 Minerals                      63,000,000
+Passenger Missions        5 - 6 Trips back and forth       90,000,000
+Trading / Hauling         Bauxite and Gallite between      80,000,000
+                          systems Bandizel and Gauna${messageQuote}`);
+    message.reply(`${messageQuote}
+[1] the time travelling to a station, selling it and go back to mining is not being taken into account, meaning the Credits per Hour ratio might decrease
+
+Check the Reddit post for more information${messageQuote}<https://www.reddit.com/r/EliteDangerous/comments/kev00j/credits_per_hour_per_activity_statistics/>`);
 }
 
 function engineers(message) {
@@ -381,8 +403,9 @@ ${messageQuote}`);
 
 function hud(message) {
     message.reply(`${messageQuote}
-The ship's HUD have several icons, mainly when there's damaged involved. Open the URL for the full list along with radar's icons
-${messageQuote}<https://drive.google.com/file/d/1oBIakqBSpN6avUWmdvhdFNQzsYZmS-o9>`);
+The ship's HUD have several icons, mainly when there's damaged involved. Open the URL for the full list along with radar's icons${messageQuote}<https://drive.google.com/file/d/1oBIakqBSpN6avUWmdvhdFNQzsYZmS-o9>`);
+    message.reply(`${messageQuote}
+You can also change the color theme of the HUD by going to this URL${messageQuote}<http://arkku.com/elite/hud_editor/>`);
 }
 
 function influence(message) {
@@ -631,6 +654,18 @@ When in the Infested state, these are the severity levels:
 - No Thargoid Presence${messageQuote}`);
 }
 
+function suits(message) {
+    message.reply(`${messageQuote}
+There are 3 suits that a commander can wear. Each suit has a specific advantages for certain activities. Be sure to wear the right one for what you will be doing.
+Suit's name ------------------- Activity
+Supratech Artemis               Exploration
+Dominator                       Combat
+Maverick                        Scavenging
+
+Suits can also have customised attachments such as lanterns, night vision, holsters and so on.
+More information will be added when Odyssey is released.${messageQuote}`);
+}
+
 function synthesis(message) {
     message.reply(`${messageQuote}
 synthesis is under construction :D
@@ -657,3 +692,24 @@ ${messageQuote}cs
 ##### More Commands for Thargoids #####${messageQuote}${messageQuote}!hearts
 !stationRepair${messageQuote}`);
 }
+
+function tools(message) {
+    message.reply(`${messageQuote}
+There are in total <number to be updated> tools available. Each tool has a specific purpose whether to overcharge panels, scan the enemy, collect samples from simple living organisms and so on. Unsure if these tools can be engineered though:
+
+Name ------------------ Activity
+Genetic Sampler         Collects and indexes samples from living organisms
+Arc Cutter              Generates a beam designed to cut through metal
+Profile Analyser        Scans a target's data for basic personal information
+                        It can also be used to clone security profiles
+Energy Link             Transfers energy between suit and target socket
+                        It can also discharge electric pulses over short distance
+
+More information will be added when Odyssey is released.${messageQuote}`);
+
+function weapons(message) {
+    message.reply(`${messageQuote}
+There are in total <number to be updated> combat weapons available. Each weapon has a specific combat style so make sure to use the best weapon depending on the situation you are in. They can go from short range, mid range or long range (such as sniper riffles).
+Weapons can also be engineered to boost it's performance.
+
+More information will be added when Odyssey is released.${messageQuote}`);
