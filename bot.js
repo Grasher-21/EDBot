@@ -711,7 +711,7 @@ More information will be added when Odyssey is released.${messageQuote}`);
 
 function weapons(message) {
     message.reply(`${messageQuote}
-There are in total <number to be updated> combat weapons available. Each weapon has a specific combat style so make sure to use the best weapon depending on the situation you are in. They can go from short range, mid range or long range (such as sniper riffles). There is also the Frag Grenade which does damage within a certain radius.
+There are in total <number to be updated> combat weapons available. Each weapon has a specific combat style so make sure to use the best weapon depending on the situation you are in. They can go from short range, mid range or long range (such as sniper riffles). There is also the Frag Grenade which does damage within a certain radius and an EMP Grenade which disables the shields of the enemies.
 Weapons can also be engineered to boost it's performance.
 
 More information will be added when Odyssey is released.${messageQuote}`);
