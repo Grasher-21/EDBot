@@ -398,10 +398,13 @@ Recovery: Salvage item from empty settlement
 ##### OPERATION MISSIONS #####
 Shutdown: Disable power at a station
 Sabotage: Insert product into the settlement production equipment
+Digital Infiltration: Upload virus in the network system of the settlement
 
 ##### PROCUREMENT MISSIONS #####
 Digital Espionage: Bring back online the settlement and download data from a data port
+Covert Espionage: Download data from a data port without raising alarms
 Covert Heist: Extract product sample from the settlement without raising alarms
+Theft: Obtain item from the settlement
 
 ##### TRANSPORTATION MISSIONS #####
 Collection: Fetch something from the settlement
@@ -409,7 +412,7 @@ Collection: Fetch something from the settlement
 ##### COMBAT MISSIONS #####
 Settlement Raid: Kill everyone at the settlement
 Takedown: Kill a specific person at the settlement${messageQuote}Check this playlist that explains on how to make each kind of mission successfully <url will be added soon>`);
-}
+};
 
 function guardians(message) {
     message.reply(`${messageQuote}cs
