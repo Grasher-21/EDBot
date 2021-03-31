@@ -81,6 +81,11 @@ bot.on('message', message => {
                 exploration(message);
                 break;
 
+            case '!footMission':
+            case '!footMissions':
+                footMissions(message);
+                break;
+
             case '!guardian':
             case '!guardians':
                 guardians(message);
@@ -220,6 +225,7 @@ ${messageQuote}
 !credits
 !engineers
 !exploration
+!footMissions
 !guardians
 !hearts
 !hud
@@ -376,6 +382,33 @@ Cartographics is the data from what you have explored, scanned and mapped. Space
 If you die, all your data is lost, meaning all your Cartographics is lost. If you mapped a system or a planet for the first time and you died before delivering the Cartographics, your name won't be in the "First Discovered by" nor "First Mapped by". Only when you deliver the data it will display your name in such systems.
 
 This link shows how much Credits you can earn just by delivering Cartographic data:${messageQuote}<https://drive.google.com/file/d/1d1wNWVBJKBSO9ufvDxmcZ_D1gxcX4kX->`);
+}
+
+function footMissions(message) {
+    message.reply(`${messageQuote}
+List of missions you will find while on foot:
+
+##### SUPPORT MISSIONS #####
+Restore: Turn on power and extinguish any fires at a station
+Reactivation: Same as restore without the fires
+
+##### SALVAGE MISSIONS #####
+Recovery: Salvage item from empty settlement
+
+##### OPERATION MISSIONS #####
+Shutdown: Disable power at a station
+Sabotage: Insert product into the settlement production equipment
+
+##### PROCUREMENT MISSIONS #####
+Digital Espionage: Bring back online the settlement and download data from a data port
+Covert Heist: Extract product sample from the settlement without raising alarms
+
+##### TRANSPORTATION MISSIONS #####
+Collection: Fetch something from the settlement
+
+##### COMBAT MISSIONS #####
+Settlement Raid: Kill everyone at the settlement
+Takedown: Kill a specific person at the settlement${messageQuote}Check this playlist that explains on how to make each kind of mission successfully <url will be added soon>`);
 }
 
 function guardians(message) {
