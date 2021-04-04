@@ -354,25 +354,34 @@ Exploration can be a good way to get some Credits and mark yourself in the Galax
 
 Recommended outfitting for Exploration:
 ----- Hardpoints -----
-Beam Laser (one is enough and engineer it with lightweight)
-Multi-Cannon (one is enough and engineer it with lightweight)
+- Beam Laser (size one is enough and engineer it with lightweight)
+- Multi-Cannon (size one is enough and engineer it with lightweight)
 
 These are optional although strongly recommended. You may wanna try shooting something and it is known that some "Points of Interest" actually requires Beam Lasers or Multi-Cannons to interact with.
 
+----- Utility -----
+- Point Defence Turret (optional)
+
+You can go without any utility mounts although I would probably recommend at least this one incase you go to Guardian sites. Point Defence Turret can be useful when fighting Guardian's defence system. Equip it on the top of the ship, not underneath.
+
 ----- Core Internal -----
-Frame Shift Drive (rating A, also engineer it with Increased FSD Range and Mass Manager experimental)
+- Frame Shift Drive (rating A, also engineer it with Increased FSD Range and Mass Manager experimental)
 
-Use rating D on all other modules for less mass which improves your jump range and if possible engineer everything you can with lightweight to reduce mass
+Use rating D on all other modules for less mass which improves your jump range and if possible engineer everything you can with lightweight and strippe down experimentals to reduce mass.
+I personally like to have the best Thrusters installed incase I'm on a planet with high gravity pull.${messageQuote}`);
 
+    message.reply(`${messageQuote}
 ----- Optional Internal -----
-Fuel Scoop (the best you can get)
-Guardian Frame Shift Driver Booster (having the class 5H it will boost your jump range by 10.5 LY)
-Shield Generator (optional although recommended)
-Corrosion Resistant Cargo Rack or Cargo Rack (16T should be fine and if needed, you can synthesize limpets)
-Auto Field-Maintenance Unit (the more the merrier)
-Planetary Vehicle Hangar (don't forget to buy the SRV)
-Repair Limpet Controller (one is enough)
-Detailed Surface Scanner
+- Fuel Scoop (the best you can get)
+- Guardian Frame Shift Drive Booster (having the class 5H it will boost your jump range by 10.5 LY)
+- Shield Generator (optional although recommended and go for the class D you should use stripped down experimental engineering)
+- Corrosion Resistant Cargo Rack or Cargo Rack (16T should be fine and if needed, you can synthesize limpets)
+- Planetary Vehicle (optional although recommended and buy class G for lightweight, also don't forget to buy the SRVs)
+- Planetary Vehicle Hangar (don't forget to buy the SRV)
+- Repair Limpet Controller (one is enough and go for the class D for lightweight)
+- Research Limpet Controller (optional although highly recommended so you can take samples and data of the things you find)
+- Detailed Surface Scanner (engineer it with expanded probe scanning radius)
+- Auto Field-Maintenance Unit (the more the merrier, use all free slots with AFMU since it takes no weight on the ship)
 
 PS: have some synthesis materials for limpets in case you need. More information in !synthesis${messageQuote}`);
 
@@ -405,13 +414,15 @@ Digital Espionage: Bring back online the settlement and download data from a dat
 Covert Espionage: Download data from a data port without raising alarms
 Covert Heist: Extract product sample from the settlement without raising alarms
 Theft: Obtain item from the settlement
+Nonviolent Heist: Obtain item from processing unit without casualities
 
 ##### TRANSPORTATION MISSIONS #####
 Collection: Fetch something from the settlement
 
 ##### COMBAT MISSIONS #####
 Settlement Raid: Kill everyone at the settlement
-Takedown: Kill a specific person at the settlement${messageQuote}Check this playlist that explains on how to make each kind of mission successfully <url will be added soon>`);
+Takedown: Kill a specific person at the settlement
+Covert Assassination: Eliminte person X without triggering alarms${messageQuote}Check this playlist that explains on how to make the hardest missions successfully <https://www.youtube.com/watch?v=K-RttX4UqFU&list=PLaR1_n4fIwe6qCBMpF1FNF12M-zHQxQ_t>`);
 };
 
 function guardians(message) {
