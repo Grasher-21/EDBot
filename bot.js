@@ -367,8 +367,8 @@ You can go without any utility mounts although I would probably recommend at lea
 ----- Core Internal -----
 - Frame Shift Drive (rating A, also engineer it with Increased FSD Range and Mass Manager experimental)
 
-Use rating D on all other modules for less mass which improves your jump range and if possible engineer everything you can with lightweight and strippe down experimentals to reduce mass.
-I personally like to have the best Thrusters installed incase I'm on a planet with high gravity pull.${messageQuote}`);
+Use rating D on all other modules for less mass which improves your jump range and if possible engineer everything you can with lightweight and stripped down experimentals to reduce mass.
+I personally like to have the best Thrusters installed incase I'm on a planet with high gravity pull though.${messageQuote}`);
 
     message.reply(`${messageQuote}
 ----- Optional Internal -----
