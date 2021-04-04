@@ -350,34 +350,33 @@ In other words: upgrade your module to level 5 (if possible for that module) and
 
 function exploration(message) {
     message.reply(`${messageQuote}
-Exploration can be a good way to get some Credits and mark yourself in the Galaxy by discovering systems and planets that no one ever saw. Remember, this game has billions of systems and only **0.05%** of the Galaxy has been explored by commanders...
+Exploration can be a good way to get some Credits and mark yourself in the Galaxy by discovering systems and planets that no one ever saw. Remember, this game has billions of systems and only 0.05% of the Galaxy has been explored by commanders...
 
 Recommended outfitting for Exploration:
 ----- Hardpoints -----
 - Beam Laser (size one is enough and engineer it with lightweight)
 - Multi-Cannon (size one is enough and engineer it with lightweight)
 
-These are optional although strongly recommended. You may wanna try shooting something and it is known that some "Points of Interest" actually requires Beam Lasers or Multi-Cannons to interact with.
+These are optional although strongly recommended. You may want to shoot something and it is known that some "Points of Interest" actually requires Beam Lasers or Multi-Cannons to interact with.
 
 ----- Utility -----
 - Point Defence Turret (optional)
 
-You can go without any utility mounts although I would probably recommend at least this one incase you go to Guardian sites. Point Defence Turret can be useful when fighting Guardian's defence system. Equip it on the top of the ship, not underneath.
+You can go without any utility mounts although I recommend at least this one incase you go to Guardian sites. Point Defence Turret can be useful when fighting Guardian's defence system. Equip it on the top of the ship, not underneath.
 
 ----- Core Internal -----
 - Frame Shift Drive (rating A, also engineer it with Increased FSD Range and Mass Manager experimental)
 
-Use rating D on all other modules for less mass which improves your jump range and if possible engineer everything you can with lightweight and stripped down experimentals to reduce mass.
+Use rating D on all other modules for less mass which improves your jump range and if possible engineer everything you can with lightweight and stripped down experimentals.
 I personally like to have the best Thrusters installed incase I'm on a planet with high gravity pull though.${messageQuote}`);
 
     message.reply(`${messageQuote}
 ----- Optional Internal -----
 - Fuel Scoop (the best you can get)
-- Guardian Frame Shift Drive Booster (having the class 5H it will boost your jump range by 10.5 LY)
-- Shield Generator (optional although recommended and go for the class D you should use stripped down experimental engineering)
+- Guardian Frame Shift Drive Booster (having the class 5H will add 10.5 LY jump range to your ship)
+- Shield Generator (optional although recommended, go for the class D and use stripped down experimental engineering)
 - Corrosion Resistant Cargo Rack or Cargo Rack (16T should be fine and if needed, you can synthesize limpets)
-- Planetary Vehicle (optional although recommended and buy class G for lightweight, also don't forget to buy the SRVs)
-- Planetary Vehicle Hangar (don't forget to buy the SRV)
+- Planetary Vehicle Hangar (optional although recommended and buy class G for lightweight, also don't forget to buy the SRVs)
 - Repair Limpet Controller (one is enough and go for the class D for lightweight)
 - Research Limpet Controller (optional although highly recommended so you can take samples and data of the things you find)
 - Detailed Surface Scanner (engineer it with expanded probe scanning radius)
