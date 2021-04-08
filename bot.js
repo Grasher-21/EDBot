@@ -336,7 +336,7 @@ However, in Deep Core mining Hotspots have a different purpose. Instead of findi
 
 Example: Hotspot of Rhodplumsite - means that whenever you find a rock with deep core minerals, the Rhodplumsite has higher change of being inside. The Hotspot does not mean you will find rocks with deep core minerals more often.
 
-I usually do Deep Core Mining at LTT 7370 or HR 6828 depending on the mineral I wanna go for:
+I usually do Deep Core Mining at LTT 7370 or HR 6828 depending on the mineral I want to go for:
 
 ##### Deep Core Mining Locations #####
 Commodity ------------System ---------Body
