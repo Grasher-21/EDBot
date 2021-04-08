@@ -338,8 +338,7 @@ Example: Hotspot of Rhodplumsite - means that whenever you find a rock with deep
 
 I usually do Deep Core Mining at LTT 7370 or HR 6828 depending on the mineral I want to go for:
 
-##### Deep Core Mining Locations #####
-Commodity ------------System ---------Body
+Commodity ----------- System ---------Body
 Alexandrite           LTT 7370        6
 Bromellite            LTT 7370        6
 Grandidierite         LTT 7370        6
@@ -424,29 +423,29 @@ function footMissions(message) {
     message.reply(`${messageQuote}
 List of missions you will find while on foot:
 
-##### SUPPORT MISSIONS #####
+----- SUPPORT MISSIONS -----
 Restore: Turn on power and extinguish any fires at a station
 Reactivation: Same as restore without the fires
 
-##### SALVAGE MISSIONS #####
+----- SALVAGE MISSIONS -----
 Recovery: Salvage item from empty settlement
 
-##### OPERATION MISSIONS #####
+----- OPERATION MISSIONS -----
 Shutdown: Disable power at a station
 Sabotage: Insert product into the settlement production equipment
 Digital Infiltration: Upload virus in the network system of the settlement
 
-##### PROCUREMENT MISSIONS #####
+----- PROCUREMENT MISSIONS -----
 Digital Espionage: Bring back online the settlement and download data from a data port
 Covert Espionage: Download data from a data port without raising alarms
 Covert Heist: Extract product sample from the settlement without raising alarms
 Theft: Obtain item from the settlement
 Nonviolent Heist: Obtain item from processing unit without casualities
 
-##### TRANSPORTATION MISSIONS #####
+----- TRANSPORTATION MISSIONS -----
 Collection: Fetch something from the settlement
 
-##### COMBAT MISSIONS #####
+----- COMBAT MISSIONS -----
 Settlement Raid: Kill everyone at the settlement
 Takedown: Kill a specific person at the settlement
 Covert Assassination: Eliminte person X without triggering alarms${messageQuote}Check this playlist that explains on how to make the hardest missions successfully <https://www.youtube.com/watch?v=K-RttX4UqFU&list=PLaR1_n4fIwe6qCBMpF1FNF12M-zHQxQ_t>`);
@@ -454,19 +453,19 @@ Covert Assassination: Eliminte person X without triggering alarms${messageQuote}
 
 function guardians(message) {
     message.reply(`${messageQuote}cs
-##### Guardian Modules Blueprint #####${messageQuote}COL 173 SECTOR GS-J B25-4     D 2     (Distance from Sol: 980 LY)
+----- Guardian Modules Blueprint -----${messageQuote}COL 173 SECTOR GS-J B25-4     D 2     (Distance from Sol: 980 LY)
 ${messageQuote}cs
-##### Guardian Starship Blueprint #####${messageQuote}HIP 36781     A 6 B     (Distance from Sol: 710 LY)
+----- Guardian Starship Blueprint -----${messageQuote}HIP 36781     A 6 B     (Distance from Sol: 710 LY)
 ${messageQuote}cs
-##### Guardian FSD Blueprint #####${messageQuote}HD 63154     B 3 A     (Distance from Sol: 1009 LY)
+----- Guardian FSD Blueprint -----${messageQuote}HD 63154     B 3 A     (Distance from Sol: 1009 LY)
 ${messageQuote}cs
-##### Guardian Obelisks #####${messageQuote}SYNUEFE NL-N C23-4     B 3     (RUINS 2)     (Distance from Sol: 871 LY)
+----- Guardian Obelisks -----${messageQuote}SYNUEFE NL-N C23-4     B 3     (RUINS 2)     (Distance from Sol: 871 LY)
 ${messageQuote}cs
-##### Guardian Materials (Best Spot) #####${messageQuote}NGC 2451A SECTOR IR-W D1-77     AB 1 A     (Distance from Sol: 803 LY)
+----- Guardian Materials (Best Spot) -----${messageQuote}NGC 2451A SECTOR IR-W D1-77     AB 1 A     (Distance from Sol: 803 LY)
 ${messageQuote}cs
-##### Guardian Weapons & Materials #####${messageQuote}SYNUEFE EU-Q C21-10     A 3     (Distance from Sol: 790 LY)
+----- Guardian Weapons & Materials -----${messageQuote}SYNUEFE EU-Q C21-10     A 3     (Distance from Sol: 790 LY)
 ${messageQuote}cs
-##### Guardian Beacon #####${messageQuote}HIP 36823     (Distance from Sol: 667 LY)`)
+----- Guardian Beacon -----${messageQuote}HIP 36823     (Distance from Sol: 667 LY)`)
 };
 
 function hearts(message) {
@@ -554,7 +553,7 @@ For better grind find a High Grade Emission (HGE) that has a timer above 10 minu
 
 function minerals(message) {
     message.reply(`${messageQuote}cs
-##### Max price Fleet Carriers can purchase the Minerals #####${messageQuote}${messageQuote}Alexandrite                       2,171,870
+----- Max price Fleet Carriers can purchase the Minerals -----${messageQuote}${messageQuote}Alexandrite                       2,171,870
 Bauxite                              10,770
 Benitoite                         1,493,210
 Bertrandite                         187,300
@@ -587,7 +586,7 @@ Check <https://edtools.cc/miner?c=83&s=Sol&mp=1> to see the current price of a c
 
 function mining(message) {
     message.reply(`${messageQuote}cs
-##### Laser Mining #####${messageQuote}${messageQuote}----- Hardpoints -----
+----- Laser Mining -----${messageQuote}${messageQuote}----- Hardpoints -----
 Mining Lasers (the more the merrier)
 
 ----- Optional Internal -----
@@ -603,7 +602,7 @@ Cargo Racks -> 100T+ cargo space
 ${messageQuote}
 
 ${messageQuote}cs
-##### Deep Core Mining #####${messageQuote}${messageQuote}----- Hardpoints -----
+----- Deep Core Mining -----${messageQuote}${messageQuote}----- Hardpoints -----
 Seismic Charge Launcher
 Sub-Surface Displacement Missile
 Abrasion Blaster
@@ -678,7 +677,7 @@ ${messageQuote}`);
 
 function ranks(message) {
     message.reply(`${messageQuote}cs
-##### Ranks for: Combat, Exploration, Trade, CQC, Federal and Imperial #####
+----- Ranks for: Combat, Exploration, Trade, CQC, Federal and Imperial -----
 ${messageQuote}<https://drive.google.com/file/d/1lmjWRO1JiiIsdleG7tmnUSzg5nEs244w>`);
 }
 
@@ -698,31 +697,31 @@ ${messageQuote}`);
 
 function ships(message) {
     message.reply(`${messageQuote}cs
-###### Ship List #####${messageQuote}<https://coriolis.io/>`);
+-----# Ship List -----${messageQuote}<https://coriolis.io/>`);
 }
 
 function sites(message) {
     message.reply(`${messageQuote}cs
-###### Ship List #####${messageQuote}<https://coriolis.io/>
+-----# Ship List -----${messageQuote}<https://coriolis.io/>
 ${messageQuote}cs
-###### Nearest station with ships, modules, commodities #####${messageQuote}<https://eddb.io/>
+-----# Nearest station with ships, modules, commodities -----${messageQuote}<https://eddb.io/>
 ${messageQuote}cs
-###### Full details for commodities, market prices #####${messageQuote}<https://inara.cz/galaxy-nearest/>
+-----# Full details for commodities, market prices -----${messageQuote}<https://inara.cz/galaxy-nearest/>
 ${messageQuote}cs
-###### Laser mining hotspots & market data #####${messageQuote}<https://edtools.cc/miner?c=83&s=Hyades%20Sector%20DB-X%20d1-112>
+-----# Laser mining hotspots & market data -----${messageQuote}<https://edtools.cc/miner?c=83&s=Hyades%20Sector%20DB-X%20d1-112>
 ${messageQuote}cs
-###### Engineers #####${messageQuote}<https://inara.cz/galaxy-engineers/>
+-----# Engineers -----${messageQuote}<https://inara.cz/galaxy-engineers/>
 ${messageQuote}cs
-###### Materials for Engineering #####${messageQuote}<https://docs.google.com/spreadsheets/d/1BpkIh8lLR4TaOs_IP8C-jutvlmWaEN6A8Zj4m4xQn6c/>
+-----# Materials for Engineering -----${messageQuote}<https://docs.google.com/spreadsheets/d/1BpkIh8lLR4TaOs_IP8C-jutvlmWaEN6A8Zj4m4xQn6c/>
 ${messageQuote}cs
-###### Fleet Carriers #####${messageQuote}<https://cmdrs-toolbox.com/fleet-carrier-calculator/>
+-----# Fleet Carriers -----${messageQuote}<https://cmdrs-toolbox.com/fleet-carrier-calculator/>
 ${messageQuote}cs
-###### Journal Limpet (Data share) #####${messageQuote}<https://journal-limpet.com/>`);
+-----# Journal Limpet (Data share) -----${messageQuote}<https://journal-limpet.com/>`);
 }
 
 function stationRepair(message) {
     message.reply(`${messageQuote}cs
-##### Station Repair #####${messageQuote}${messageQuote}Thargoids often invade systems. When that happens, the system will be with the state of "Infested". If an insufficient number of Thargoid ships are destroyed in a certain period of time, the system will enter the state of "Incursion". When this happens, space stations will be damaged, services in the stations won't be operational and the only missions available are the ones to rescue passengers, transporting them from the space station to a megaship. Anti-Xeno Conflict Zones will appear in the system and for each week the AXCZs remain, another station in the same system is attacked.
+----- Station Repair -----${messageQuote}${messageQuote}Thargoids often invade systems. When that happens, the system will be with the state of "Infested". If an insufficient number of Thargoid ships are destroyed in a certain period of time, the system will enter the state of "Incursion". When this happens, space stations will be damaged, services in the stations won't be operational and the only missions available are the ones to rescue passengers, transporting them from the space station to a megaship. Anti-Xeno Conflict Zones will appear in the system and for each week the AXCZs remain, another station in the same system is attacked.
 
 To start repairing the space stations, the Infested state must mention "No Thargoid Presence". Damaged stations can be re-attacked before repairs are complete, which voids all repair work done prior to the new attack. Thus, it is not recommended to start repairing a station until the Incursion has been cleared. Only then the Background Simulator will start with the repair. Commanders may help by delivering the commodities that station requires.
 
@@ -755,22 +754,22 @@ ${messageQuote}`);
 
 function thargoids(message) {
     message.reply(`${messageQuote}cs
-##### Thargoid Barnacles (Big Forest) #####${messageQuote}${messageQuote}HYADES SECTOR AQ-Y D81     C 2     (Hotspot 3)     (Distance from Sol: 271 LY)${messageQuote}
+----- Thargoid Barnacles (Big Forest) -----${messageQuote}${messageQuote}HYADES SECTOR AQ-Y D81     C 2     (Hotspot 3)     (Distance from Sol: 271 LY)${messageQuote}
 ${messageQuote}cs
-##### Thargoid Sensors #####${messageQuote}${messageQuote}LTT 1935     6 A     (Distance from Sol: 71 LY)     (Sensor per relog: 1)
+----- Thargoid Sensors -----${messageQuote}${messageQuote}LTT 1935     6 A     (Distance from Sol: 71 LY)     (Sensor per relog: 1)
 HIP 17403     A 4 A     (Distance from Sol: 411 LY)     (Sensor per relog: 3)${messageQuote}
 ${messageQuote}cs
-##### Thargoid Structure (Active) #####${messageQuote}${messageQuote}PLEIADES SECTOR MC-V C2-0     1 A     (Distance from Sol: 383 LY)${messageQuote}
+----- Thargoid Structure (Active) -----${messageQuote}${messageQuote}PLEIADES SECTOR MC-V C2-0     1 A     (Distance from Sol: 383 LY)${messageQuote}
 ${messageQuote}cs
-##### Thargoid Combat #####${messageQuote}${messageQuote}PLEIADES SECTOR HR-W D1-79     (Distance from Sol: 382 LY)     (Pleiades Nebula)
+----- Thargoid Combat -----${messageQuote}${messageQuote}PLEIADES SECTOR HR-W D1-79     (Distance from Sol: 382 LY)     (Pleiades Nebula)
 MUSCA DARK REGION PJ-P B6-1     (Distance from Sol: 520 LY)     (Musca Nebula)
 HIP 23759     (Distance from Sol: 891 LY)     (Witch Head Nebula)${messageQuote}
 ${messageQuote}cs
-##### Others #####${messageQuote}${messageQuote}- Non Human Signal Sources (NHSS) might have Thargoids. Sometimes it can only be Scouts. However, all NHSS with the Salvage Icon is a 100% guarantee that a Thargoid will be there
+----- Others -----${messageQuote}${messageQuote}- Non Human Signal Sources (NHSS) might have Thargoids. Sometimes it can only be Scouts. However, all NHSS with the Salvage Icon is a 100% guarantee that a Thargoid will be there
 - Thargoid Probes can be found in NHSS. Look for NHSS Threat Level 5 or 7 for better spawn rates of the Thargoid Probe
 - Thargoid Links, Resin, Biological Matter and Technology Sample can be found in Thargoid Structures${messageQuote}
 ${messageQuote}cs
-##### More Commands for Thargoids #####${messageQuote}${messageQuote}!hearts
+----- More Commands for Thargoids -----${messageQuote}${messageQuote}!hearts
 !stationRepair${messageQuote}`);
 }
 
@@ -778,21 +777,50 @@ function tools(message) {
     message.reply(`${messageQuote}
 There are in total <number to be updated> tools available. Each tool has a specific purpose whether to overcharge panels, scan the enemy, collect samples from simple living organisms and so on. Unsure if these tools can be engineered though:
 
-Name ------------------ Activity
+Tool Name ------------- Activity
 Genetic Sampler         Collects and indexes samples from living organisms
 Arc Cutter              Generates a beam designed to cut through metal
 Profile Analyser        Scans a target's data for basic personal information
                         It can also be used to clone security's profiles
+                        Avoid being scanned when you do this though
 Energy Link             Transfers energy between the suit and a target socket
-                        It can also discharge electric pulses over short distance
+                        It can also overload the target socket which disables it completely
+                        It can also be used to do stealth kills when the enemy has no shields
+E-Breach                A single-use device used to circumvent security systems
+Medkit                  A portable medical kit used to treat wounds
+Energy Cell             A single-use item that restores energy to suit batteries
 
 More information will be added when Odyssey is released.${messageQuote}`);
 }
 
 function weapons(message) {
     message.reply(`${messageQuote}
-There are in total <number to be updated> combat weapons available. Each weapon has a specific combat style so make sure to use the best weapon depending on the situation you are in. They can go from short range, mid range or long range (such as sniper riffles). There is also the Frag Grenade which does damage within a certain radius and an EMP Grenade which disables the shields of the enemies.
-Weapons can also be engineered to boost it's performance.
+There are in total <number to be updated> combat weapons available. Each weapon has a specific combat style so make sure to use the best weapon depending on the situation you are in.
+
+Weapons ------------ Damage Type --------------- Weapon Size
+KARMA L-6            Explosive (Burst)           Carbine
+
+TK APHELION          Laser (Burst)               Rifle
+KARMA AR-50          Kinetic (Automatic)         Rifle
+
+TK ECLIPSE           Laser (Automatic)           Carbine
+KARMA C-44           Kinetic (Burst)             Carbine
+
+TK ZENITH            Laser (Burst)               Pistol
+KARMA P-15           Kinetic (Semi-Automatic)    Pistol
+
+
+----- Quick Tips -----
+1) The best way to fight is to use Laser weapons when the enemy has shields up and switch to Kinetic weapons when the shields are down.
+2) You can do "silent" kills as well if you "walk" while crouched, go near the enemy and zap them using the Energy Link tool in the Overload mode when the enemy has no shields up.
+3) Weapons can also be engineered to boost it's performance.
+
+You also have few grenades available:
+
+Name ------------------- Effect
+Shield Disruptor         A deployable device that temporarily disrupts shields with an EMP
+Frag Grenade             An explosive weapon that damages nearby targets upon detonation
+Shield Projtector        A deployable device that generates a shield barrier to absorb damage
 
 More information will be added when Odyssey is released.${messageQuote}`);
 }
