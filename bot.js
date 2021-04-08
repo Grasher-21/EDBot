@@ -44,7 +44,7 @@ bot.on('message', message => {
 
         var command = message.content.split(' ');
 
-        switch (command[0]) {
+        switch (command[0].toLowerCase()) {
             case '!roll': // Generating a random number: command = !roll 5
                 if (command.length == 2 && !isNaN(command[1]) && command[1] > 1) {
                     var rng = Math.floor(Math.random() * command[1]) + 1;
@@ -72,6 +72,10 @@ bot.on('message', message => {
                 credits(message);
                 break;
 
+            case '!deepcore':
+                deepCore(message);
+                break;
+
             case '!engineer':
             case '!engineers':
                 engineers(message);
@@ -81,8 +85,8 @@ bot.on('message', message => {
                 exploration(message);
                 break;
 
-            case '!footMission':
-            case '!footMissions':
+            case '!footmission':
+            case '!footmissions':
                 footMissions(message);
                 break;
 
@@ -155,8 +159,8 @@ bot.on('message', message => {
                 sites(message);
                 break;
 
-            case '!stationRepair':
-            case '!stationsRepair':
+            case '!stationrepair':
+            case '!stationsrepair':
                 stationRepair(message);
                 break;
 
@@ -223,6 +227,7 @@ ${messageQuote}
 !bgs
 !combat
 !credits
+!deepcore
 !engineers
 !exploration
 !footMissions
@@ -234,6 +239,7 @@ ${messageQuote}
 !minerals
 !mining
 !modules
+!outfitting
 !passengers
 !paths
 !ranks
@@ -292,9 +298,9 @@ There are several different ways of combat:
 - NPC human ships
 - Thargoid interceptors
 
-Combat gives you Credits for taking down the opponent (when they're marked as **Wanted**):
-- Combat Bonds are obtained in Conflict Zones by shooting ships of a Faction **after picking a side** to fight for.
-- Combat Bounties are obtained when killing **Wanted** ships in Navigation Beacons, Resource Extraction Sites, etc. Using a Kill Warrant Scanner will, sometimes, make "Clean Ships" be marked as wanted. Using the same scanner it may also increase the payout of a target.
+Combat gives you Credits for taking down the opponent (when they're marked as WANTED):
+- Combat Bonds are obtained only in Conflict Zones by shooting ships of a Faction after picking a side to fight for.
+- Combat Bounties are obtained when killing WANTED ships in Navigation Beacons, Resource Extraction Sites, etc. Using a Kill Warrant Scanner will, sometimes, make "Clean Ships" be marked as wanted. Using the same scanner it may also increase the payout of a target.
 
 For NPC human ships, one of the recommended ships is the Federal Corvette. It has a lot of hardpoints, utility and optional modules.
 For Thargoid interceptos Krait MK II and Alliance Chieftain are considered the best ships${messageQuote}`);
@@ -322,13 +328,35 @@ Trading / Hauling         Bauxite and Gallite between      80,000,000
 Check the Reddit post for more information${messageQuote}<https://www.reddit.com/r/EliteDangerous/comments/kev00j/credits_per_hour_per_activity_statistics/>`);
 }
 
+function deepCore(message) {
+    message.reply(`${messageQuote}
+Ringed planets with Hotspots is quite important for Laser Mining. In other words, if you see a Hotspot of a specific mineral, means that the rocks in that area might contain that specific mineral more often. If multiple Hotspots of the same mineral overlap each other, that area will increase even further the odds of finding that same material inside the rocks.
+
+However, in Deep Core mining Hotspots have a different purpose. Instead of finding rocks with deep core minerals more often, the Hotspots tells you that whenever you do find a rock that has a deep core mineral inside, that mineral has higher probability of being one mentioned in the Hotspot.
+
+Example: Hotspot of Rhodplumsite - means that whenever you find a rock with deep core minerals, the Rhodplumsite has higher change of being inside. The Hotspot does not mean you will find rocks with deep core minerals more often.
+
+I usually do Deep Core Mining at LTT 7370 or HR 6828 depending on the mineral I wanna go for:
+
+##### Deep Core Mining Locations #####
+Commodity ------------System ---------Body
+Alexandrite           LTT 7370        6
+Bromellite            LTT 7370        6
+Grandidierite         LTT 7370        6
+Monazite              HR 6828         2
+Rhodplumsite          HR 6828         2
+Serendibite           HR 6828         2
+Tritium               LTT 7370        6
+Void Opal             LTT 7370        6${messageQuote}`);
+}
+
 function engineers(message) {
     message.reply(`${messageQuote}
 After getting the best modules for your ship, what is left is the Engineering. This will boost the advantages of those modules and even add extra effects. However, it does have some downsides as well, for example: you may boost your shield generator to withstand more damage with the cost of using more power in return.
 
-Almost all modules can be engineered, and from those, almost all of them can also have experimental effects. There's no "best engineering" for a module, it all depends on the purpose of what you want or need, for example: if you want exploration, you may want to engineer your modules as light-weight, if you want for combat, you may want to engineer them for integrity or other kind of upgrades, and so on.
+Almost all modules can be engineered, and from those, almost all of them can also have experimental effects. There's no "best engineering" for a module, it all depends on the purpose of what you want or need, for example: if you want exploration, you may want to engineer your modules as lightweight, if you want for combat, you may want to engineer them for integrity or other kind of upgrades, and so on.
 
-There are in total 25 engineers (for now). Most of them are located within the bubble, although some are in the Colonia region, basically 20,000 LY away.
+There are in total 25 engineers (for now). Most of them are located within the bubble, although some are in the Colonia region, basically 22,000 LY away from Sol.
 All Engineers have "meeting requirements" and "unlocking requirements".
 
 Meeting Requirements:
@@ -342,10 +370,10 @@ In other words: upgrade your module to level 5 (if possible for that module) and
     message.reply(`${messageQuote}
 ----- Quick Tips -----
 1) Almost all Engineers accept Cartographics Data to increase the access levels as well as selling materials
-2) Upgrading your modules at the Engineer's site will increase the access levels, while upgrading remotely will not, so make sure to do remote upgrades only after you're already at full access
+2) Upgrading your modules at the Engineer's site will increase the access levels, while upgrading remotely will not, so make sure to do remote upgrades only after you're already with full access
 3) To do remote upgrades, you must pin the blueprint. Then you can access it when you're docked anywhere else. You can only pin ONE blueprint per Engineer, no matter what type of modules
 4) You can't add an "Experimental Effect" to a module remotely. You have to travel the Engineer's site for that. There are multiple Engineers that can upgrade the same kind of module, however not all Engineers can upgrade those modules to the max level of 5. But for the Experimental Effects, any Engineer that works with that module will be able to add the Experimental Effect.
-5) You do not need to have the module at the maxed level to add the Experimental Effect, you can do it right at beginning after you start Engineering a module. With this said, it's wise for you to see which Engineers work with the modules you want to upgrade and try to go to the Engineer that works with most of them. That way you will be able to add multiple Experimental Effects at the same Engineer even if they do not upgrade them to max level.${messageQuote}You can check the full Engineer list here <https://inara.cz/galaxy-engineers/> along with the systems they're located at, meeting and unlocking requirements`);
+5) You do not need to have the module at the maxed level to add the Experimental Effect, you can do it right at beginning after you start Engineering a module. With this said, it's wise for you to see which Engineers work with the modules you want to upgrade and try to go to the Engineer that works with most of them. That way you will be able to add multiple Experimental Effects at the same Engineer even if they do not upgrade them to max level.${messageQuote}You can check the full Engineer list here <https://inara.cz/galaxy-engineers/> along with the systems they're located at, including the meeting and unlocking requirements`);
 }
 
 function exploration(message) {
@@ -597,11 +625,17 @@ Cargo Racks (100T+ cargo space)
 4) Go AWAY from the asteroid and detonate the charges when the graphic reaches the "good" range
 5) When the asteroid breaks, use abrasion blaster on the surface to release the minerals from the asteroid
 6) All ringed planets may be good for deep core mining${messageQuote}Go to <http://eddb.io> to find where to get the modules or write **!sites**
-A lot of Credits can be made from mining. Type **!minerals** for more information`);
+A lot of Credits can be made from mining. Type **!minerals** for more information
+Type **!deepcore** for the best places, in my opinion, for deep core mining`);
 }
 
 function modules(message) {
-    message.reply(`Go to <http://eddb.io> to find where to get the modules`);
+    message.reply(`${messageQuote}
+When outfitting your ship with modules, you need to think where exactly you want them to be in the ship. For instance, if the ship you're outfitting is going to use the cargo hatch quite often, such is the case of a mining ship, then you might want to use Point Defences which can shoot Hatch Breaker Limpets thus preventing your cargo from being stolen by pirates. However, these Point Defences should be placed underneath the ship which is the location of the cargo hatch. Point Defence that is on the top of the ship will be less efficient when it comes to protect  your cargo hatch.
+
+Since in Elite Dangerous it can be confusing where the modules are being placed, make sure to see the blueprints of your ship in the following link${messageQuote}<http://a.teall.info/edsa/>
+${messageQuote}
+Also, use the following website to check where to buy the modules you want${messageQuote}<http://eddb.io>`);
 }
 
 function passengers(message) {
