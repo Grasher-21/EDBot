@@ -246,7 +246,7 @@ ${messageQuote}
 !scanners
 !ships
 !sites
-!stationRepair
+!stationrepair
 !suits
 !synthesis
 !thargoids
@@ -330,9 +330,9 @@ Check the Reddit post for more information${messageQuote}<https://www.reddit.com
 
 function deepCore(message) {
     message.reply(`${messageQuote}
-Ringed planets with Hotspots is quite important for Laser Mining. In other words, if you see a Hotspot of a specific mineral, means that the rocks in that area might contain that specific mineral more often. If multiple Hotspots of the same mineral overlap each other, that area will increase even further the odds of finding that same material inside the rocks.
+Ringed planets with Hotspots is quite important for Laser Mining. If you see a Hotspot of a specific mineral, means that the rocks in that area might contain that specific mineral more often. If multiple Hotspots of the same mineral overlap each other, that area will increase even further the odds of finding that same material inside the rocks.
 
-However, in Deep Core mining Hotspots have a different purpose. Instead of finding rocks with deep core minerals more often, the Hotspots tells you that whenever you do find a rock that has a deep core mineral inside, that mineral has higher probability of being one mentioned in the Hotspot.
+However, in Deep Core mining Hotspots have a different purpose. Instead of finding rocks with deep core minerals more often, the Hotspots tells you that whenever you do find a rock that has a deep core mineral inside, that mineral has higher probability of being the one mentioned in the Hotspot.
 
 Example: Hotspot of Rhodplumsite - means that whenever you find a rock with deep core minerals, the Rhodplumsite has higher change of being inside. The Hotspot does not mean you will find rocks with deep core minerals more often.
 
