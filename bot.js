@@ -322,6 +322,7 @@ Deep Core Mining          90 Minerals                      63,000,000
 Passenger Missions        5 - 6 Trips back and forth       90,000,000
 Trading / Hauling         Bauxite and Gallite between      80,000,000
                           systems Bandizel and Gauna${messageQuote}`);
+
     message.reply(`${messageQuote}
 [1] the time travelling to a station, selling it and go back to mining is not being taken into account, meaning the Credits per Hour ratio might decrease
 
@@ -779,15 +780,21 @@ There are in total <number to be updated> tools available. Each tool has a speci
 
 Tool Name ------------- Activity
 Genetic Sampler         Collects and indexes samples from living organisms
+
 Arc Cutter              Generates a beam designed to cut through metal
+
 Profile Analyser        Scans a target's data for basic personal information
                         It can also be used to clone security's profiles
                         Avoid being scanned when you do this though
+
 Energy Link             Transfers energy between the suit and a target socket
                         It can also overload the target socket which disables it completely
                         It can also be used to do stealth kills when the enemy has no shields
+
 E-Breach                A single-use device used to circumvent security systems
+
 Medkit                  A portable medical kit used to treat wounds
+
 Energy Cell             A single-use item that restores energy to suit batteries
 
 More information will be added when Odyssey is released.${messageQuote}`);
@@ -819,7 +826,9 @@ You also have few grenades available:
 
 Name ------------------- Effect
 Shield Disruptor         A deployable device that temporarily disrupts shields with an EMP
+
 Frag Grenade             An explosive weapon that damages nearby targets upon detonation
+
 Shield Projtector        A deployable device that generates a shield barrier to absorb damage
 
 More information will be added when Odyssey is released.${messageQuote}`);
