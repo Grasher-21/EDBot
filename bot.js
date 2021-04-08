@@ -227,7 +227,7 @@ ${messageQuote}
 !bgs
 !combat
 !credits
-!deepcore
+!deepCore
 !engineers
 !exploration
 !footMissions
@@ -631,7 +631,7 @@ Type **!deepcore** for the best places, in my opinion, for deep core mining`);
 
 function modules(message) {
     message.reply(`${messageQuote}
-When outfitting your ship with modules, you need to think where exactly you want them to be in the ship. For instance, if the ship you're outfitting is going to use the cargo hatch quite often, such is the case of a mining ship, then you might want to use Point Defences which can shoot Hatch Breaker Limpets thus preventing your cargo from being stolen by pirates. However, these Point Defences should be placed underneath the ship which is the location of the cargo hatch. Point Defence that is on the top of the ship will be less efficient when it comes to protect  your cargo hatch.
+When outfitting your ship with modules, you need to think where exactly you want them to be in the ship. For instance, if the ship you're outfitting is going to use the cargo hatch quite often, such is the case of a mining ship, then you might want to use Point Defences which can shoot Hatch Breaker Limpets thus preventing your cargo from being stolen by pirates. However, these Point Defences should be placed underneath the ship which is the location of the cargo hatch. Point Defence that is on the top of the ship will be less efficient when it comes to protect your cargo hatch.
 
 Since in Elite Dangerous it can be confusing where the modules are being placed, make sure to see the blueprints of your ship in the following link${messageQuote}<http://a.teall.info/edsa/>
 ${messageQuote}
