@@ -129,6 +129,10 @@ bot.on('message', message => {
                 modules(message);
                 break;
 
+            case '!onFootCombat':
+                onFootCombat(message);
+                break;
+
             case '!passenger':
             case '!passengers':
                 passengers(message);
@@ -147,6 +151,10 @@ bot.on('message', message => {
             case '!scanner':
             case '!scanners':
                 scanners(message);
+                break;
+
+            case '!shipCombat':
+                shipCombat(message);
                 break;
 
             case '!ship':
@@ -171,6 +179,10 @@ bot.on('message', message => {
 
             case '!synthesis':
                 synthesis(message);
+                break;
+
+            case '!thargoidCombat':
+                thargoidCombat(message);
                 break;
 
             case '!thargoid':
@@ -239,16 +251,19 @@ ${messageQuote}
 !minerals
 !mining
 !modules
+!onFootCombat
 !outfitting
 !passengers
 !paths
 !ranks
 !scanners
+!shipCombat
 !ships
 !sites
 !stationrepair
 !suits
 !synthesis
+!thargoidCombat
 !thargoids
 !tools
 !weapons
@@ -303,7 +318,11 @@ Combat gives you Credits for taking down the opponent (when they're marked as WA
 - Combat Bounties are obtained when killing WANTED ships in Navigation Beacons, Resource Extraction Sites, etc. Using a Kill Warrant Scanner will, sometimes, make "Clean Ships" be marked as wanted. Using the same scanner it may also increase the payout of a target.
 
 For NPC human ships, one of the recommended ships is the Federal Corvette. It has a lot of hardpoints, utility and optional modules.
-For Thargoid interceptos Krait MK II and Alliance Chieftain are considered the best ships${messageQuote}`);
+For Thargoid interceptos Krait MK II and Alliance Chieftain are considered the best ships
+
+Type !shipCombat for more information on PvE against Human ships
+Type !thargoidCombat for more information on PvE against Thargoids
+Type !onFootCombat for more information on foot combat${messageQuote}`);
 }
 
 function credits(message) {
@@ -601,7 +620,6 @@ Cargo Racks -> 100T+ cargo space
 1) Use the prospect on asteroids before using the mining laser for better yield
 2) One of the best spots for Laser Mining is in: HYADES SECTOR DB-X D1-112     2
 ${messageQuote}
-
 ${messageQuote}cs
 ----- Deep Core Mining -----${messageQuote}${messageQuote}----- Hardpoints -----
 Seismic Charge Launcher
@@ -636,6 +654,11 @@ When outfitting your ship with modules, you need to think where exactly you want
 Since in Elite Dangerous it can be confusing where the modules are being placed, make sure to see the blueprints of your ship in the following link${messageQuote}<http://a.teall.info/edsa/>
 ${messageQuote}
 Also, use the following website to check where to buy the modules you want${messageQuote}<http://eddb.io>`);
+}
+
+function onFootCombat(message) {
+    message.reply(`${messageQuote}
+Still too soon to add content. Will be updated eventually...${messageQuote}<http://eddb.io>`);
 }
 
 function passengers(message) {
@@ -696,6 +719,24 @@ SRV > Composition Scanner - Scan for specific items on land
 ${messageQuote}`);
 }
 
+function shipCombat(message) {
+    message.reply(`${messageQuote}cs
+The best locations to do combat with your ship are:
+- Hazardous Resource Extraction Sites
+- Conflict Zones
+- Compromised Navigation Beacon
+
+With Hazardous RES you can even take advantage of Massacre Missions and stack the kill counts with other Massacre Missions from other factions.
+Note: the faction target must be the same in order for a kill to count for all the missions you got
+
+One of the best locations for Hazardous RES is the system: LAMBDA-2 PHOENICIS
+
+Go to Struzan Vision station and check the missions over there. There are 5 Imperial and 2 Independent factions. Most of the missions they give have the same enemy: LHS 1071 Pirates
+
+Pick one Massacre Mission from each faction and head to LHS 1071. You can find a Hazardous Resource Extraction Site on the ringed Planet 3.
+${messageQuote}<https://edtools.cc/pve?s=Lambda-2+Phoenicis&md=100&lo=on&sc=>`);
+}
+
 function ships(message) {
     message.reply(`${messageQuote}cs
 -----# Ship List -----${messageQuote}<https://coriolis.io/>`);
@@ -750,6 +791,12 @@ More information will be added when Odyssey is released.${messageQuote}`);
 function synthesis(message) {
     message.reply(`${messageQuote}
 synthesis is under construction :D
+${messageQuote}`);
+}
+
+function thargoidCombat(message) {
+    message.reply(`${messageQuote}
+thargoid combat is under construction :D
 ${messageQuote}`);
 }
 
