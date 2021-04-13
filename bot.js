@@ -733,8 +733,8 @@ One of the best locations for Hazardous RES is the system: LAMBDA-2 PHOENICIS
 
 Go to Struzan Vision station and check the missions over there. There are 5 Imperial and 2 Independent factions. Most of the missions they give have the same enemy: LHS 1071 Pirates
 
-Pick one Massacre Mission from each faction and head to LHS 1071. You can find a Hazardous Resource Extraction Site on the ringed Planet 3.
-${messageQuote}<https://edtools.cc/pve?s=Lambda-2+Phoenicis&md=100&lo=on&sc=>`);
+Pick one Massacre Mission from each faction and head to the Hazardous Resource Extraction Site on the ringed planet:
+LHS 1071     3${messageQuote}<https://edtools.cc/pve?s=Lambda-2+Phoenicis&md=100&lo=on&sc=>`);
 }
 
 function ships(message) {
