@@ -129,7 +129,7 @@ bot.on('message', message => {
                 modules(message);
                 break;
 
-            case '!onFootCombat':
+            case '!onfootcombat':
                 onFootCombat(message);
                 break;
 
@@ -153,7 +153,7 @@ bot.on('message', message => {
                 scanners(message);
                 break;
 
-            case '!shipCombat':
+            case '!shipcombat':
                 shipCombat(message);
                 break;
 
@@ -181,7 +181,7 @@ bot.on('message', message => {
                 synthesis(message);
                 break;
 
-            case '!thargoidCombat':
+            case '!thargoidcombat':
                 thargoidCombat(message);
                 break;
 
