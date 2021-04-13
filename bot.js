@@ -472,19 +472,19 @@ Covert Assassination: Eliminte person X without triggering alarms${messageQuote}
 };
 
 function guardians(message) {
-    message.reply(`${messageQuote}cs
+    message.reply(`${messageQuote}
 ----- Guardian Modules Blueprint -----${messageQuote}COL 173 SECTOR GS-J B25-4     D 2     (Distance from Sol: 980 LY)
-${messageQuote}cs
+${messageQuote}
 ----- Guardian Starship Blueprint -----${messageQuote}HIP 36781     A 6 B     (Distance from Sol: 710 LY)
-${messageQuote}cs
+${messageQuote}
 ----- Guardian FSD Blueprint -----${messageQuote}HD 63154     B 3 A     (Distance from Sol: 1009 LY)
-${messageQuote}cs
+${messageQuote}
 ----- Guardian Obelisks -----${messageQuote}SYNUEFE NL-N C23-4     B 3     (RUINS 2)     (Distance from Sol: 871 LY)
-${messageQuote}cs
+${messageQuote}
 ----- Guardian Materials (Best Spot) -----${messageQuote}NGC 2451A SECTOR IR-W D1-77     AB 1 A     (Distance from Sol: 803 LY)
-${messageQuote}cs
+${messageQuote}
 ----- Guardian Weapons & Materials -----${messageQuote}SYNUEFE EU-Q C21-10     A 3     (Distance from Sol: 790 LY)
-${messageQuote}cs
+${messageQuote}
 ----- Guardian Beacon -----${messageQuote}HIP 36823     (Distance from Sol: 667 LY)`)
 };
 
@@ -572,7 +572,7 @@ For better grind find a High Grade Emission (HGE) that has a timer above 10 minu
 }
 
 function minerals(message) {
-    message.reply(`${messageQuote}cs
+    message.reply(`${messageQuote}
 ----- Max price Fleet Carriers can purchase the Minerals -----${messageQuote}${messageQuote}Alexandrite                       2,171,870
 Bauxite                              10,770
 Benitoite                         1,493,210
@@ -605,7 +605,7 @@ Check <https://edtools.cc/miner?c=83&s=Sol&mp=1> to see the current price of a c
 }
 
 function mining(message) {
-    message.reply(`${messageQuote}cs
+    message.reply(`${messageQuote}
 ----- Laser Mining -----${messageQuote}${messageQuote}----- Hardpoints -----
 Mining Lasers (the more the merrier)
 
@@ -620,7 +620,7 @@ Cargo Racks -> 100T+ cargo space
 1) Use the prospect on asteroids before using the mining laser for better yield
 2) One of the best spots for Laser Mining is in: HYADES SECTOR DB-X D1-112     2
 ${messageQuote}
-${messageQuote}cs
+${messageQuote}
 ----- Deep Core Mining -----${messageQuote}${messageQuote}----- Hardpoints -----
 Seismic Charge Launcher
 Sub-Surface Displacement Missile
@@ -700,7 +700,7 @@ ${messageQuote}`);
 }
 
 function ranks(message) {
-    message.reply(`${messageQuote}cs
+    message.reply(`${messageQuote}
 ----- Ranks for: Combat, Exploration, Trade, CQC, Federal and Imperial -----
 ${messageQuote}<https://drive.google.com/file/d/1lmjWRO1JiiIsdleG7tmnUSzg5nEs244w>`);
 }
@@ -720,7 +720,7 @@ ${messageQuote}`);
 }
 
 function shipCombat(message) {
-    message.reply(`${messageQuote}cs
+    message.reply(`${messageQuote}
 The best locations to do combat with your ship are:
 - Hazardous Resource Extraction Sites
 - Conflict Zones
@@ -738,31 +738,31 @@ ${messageQuote}<https://edtools.cc/pve?s=Lambda-2+Phoenicis&md=100&lo=on&sc=>`);
 }
 
 function ships(message) {
-    message.reply(`${messageQuote}cs
+    message.reply(`${messageQuote}
 -----# Ship List -----${messageQuote}<https://coriolis.io/>`);
 }
 
 function sites(message) {
-    message.reply(`${messageQuote}cs
+    message.reply(`${messageQuote}
 -----# Ship List -----${messageQuote}<https://coriolis.io/>
-${messageQuote}cs
+${messageQuote}
 -----# Nearest station with ships, modules, commodities -----${messageQuote}<https://eddb.io/>
-${messageQuote}cs
+${messageQuote}
 -----# Full details for commodities, market prices -----${messageQuote}<https://inara.cz/galaxy-nearest/>
-${messageQuote}cs
+${messageQuote}
 -----# Laser mining hotspots & market data -----${messageQuote}<https://edtools.cc/miner?c=83&s=Hyades%20Sector%20DB-X%20d1-112>
-${messageQuote}cs
+${messageQuote}
 -----# Engineers -----${messageQuote}<https://inara.cz/galaxy-engineers/>
-${messageQuote}cs
+${messageQuote}
 -----# Materials for Engineering -----${messageQuote}<https://docs.google.com/spreadsheets/d/1BpkIh8lLR4TaOs_IP8C-jutvlmWaEN6A8Zj4m4xQn6c/>
-${messageQuote}cs
+${messageQuote}
 -----# Fleet Carriers -----${messageQuote}<https://cmdrs-toolbox.com/fleet-carrier-calculator/>
-${messageQuote}cs
+${messageQuote}
 -----# Journal Limpet (Data share) -----${messageQuote}<https://journal-limpet.com/>`);
 }
 
 function stationRepair(message) {
-    message.reply(`${messageQuote}cs
+    message.reply(`${messageQuote}
 ----- Station Repair -----${messageQuote}${messageQuote}Thargoids often invade systems. When that happens, the system will be with the state of "Infested". If an insufficient number of Thargoid ships are destroyed in a certain period of time, the system will enter the state of "Incursion". When this happens, space stations will be damaged, services in the stations won't be operational and the only missions available are the ones to rescue passengers, transporting them from the space station to a megaship. Anti-Xeno Conflict Zones will appear in the system and for each week the AXCZs remain, another station in the same system is attacked.
 
 To start repairing the space stations, the Infested state must mention "No Thargoid Presence". Damaged stations can be re-attacked before repairs are complete, which voids all repair work done prior to the new attack. Thus, it is not recommended to start repairing a station until the Incursion has been cleared. Only then the Background Simulator will start with the repair. Commanders may help by delivering the commodities that station requires.
@@ -801,22 +801,22 @@ ${messageQuote}`);
 }
 
 function thargoids(message) {
-    message.reply(`${messageQuote}cs
+    message.reply(`${messageQuote}
 ----- Thargoid Barnacles (Big Forest) -----${messageQuote}${messageQuote}HYADES SECTOR AQ-Y D81     C 2     (Hotspot 3)     (Distance from Sol: 271 LY)${messageQuote}
-${messageQuote}cs
+${messageQuote}
 ----- Thargoid Sensors -----${messageQuote}${messageQuote}LTT 1935     6 A     (Distance from Sol: 71 LY)     (Sensor per relog: 1)
 HIP 17403     A 4 A     (Distance from Sol: 411 LY)     (Sensor per relog: 3)${messageQuote}
-${messageQuote}cs
+${messageQuote}
 ----- Thargoid Structure (Active) -----${messageQuote}${messageQuote}PLEIADES SECTOR MC-V C2-0     1 A     (Distance from Sol: 383 LY)${messageQuote}
-${messageQuote}cs
+${messageQuote}
 ----- Thargoid Combat -----${messageQuote}${messageQuote}PLEIADES SECTOR HR-W D1-79     (Distance from Sol: 382 LY)     (Pleiades Nebula)
 MUSCA DARK REGION PJ-P B6-1     (Distance from Sol: 520 LY)     (Musca Nebula)
 HIP 23759     (Distance from Sol: 891 LY)     (Witch Head Nebula)${messageQuote}
-${messageQuote}cs
+${messageQuote}
 ----- Others -----${messageQuote}${messageQuote}- Non Human Signal Sources (NHSS) might have Thargoids. Sometimes it can only be Scouts. However, all NHSS with the Salvage Icon is a 100% guarantee that a Thargoid will be there
 - Thargoid Probes can be found in NHSS. Look for NHSS Threat Level 5 or 7 for better spawn rates of the Thargoid Probe
 - Thargoid Links, Resin, Biological Matter and Technology Sample can be found in Thargoid Structures${messageQuote}
-${messageQuote}cs
+${messageQuote}
 ----- More Commands for Thargoids -----${messageQuote}${messageQuote}!hearts
 !stationRepair${messageQuote}`);
 }
