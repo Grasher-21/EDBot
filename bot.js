@@ -617,9 +617,11 @@ Detailed Surface Scanner
 Cargo Racks -> 100T+ cargo space
 
 ----- Quick Tips -----
-1) Use the prospect on asteroids before using the mining laser for better yield
+1) Use the prospect on asteroids before using the mining laser for 2x more yield
 2) One of the best spots for Laser Mining is in: HYADES SECTOR DB-X D1-112     2
-${messageQuote}
+3) Go to this URL and do Laser Map Mining for the best cargo per hour of Painite${messageQuote}<https://drive.google.com/drive/folders/14OGsi1Q3sr8h9Dpd7Kti4LCJQY1JeUo4?usp=sharing>
+${messageQuote}4) You can also check this Video that shows how to do the Map Mining${messageQuote}<https://www.youtube.com/watch?v=Jn4yqB_-82g>
+
 ${messageQuote}
 ----- Deep Core Mining -----${messageQuote}${messageQuote}----- Hardpoints -----
 Seismic Charge Launcher
