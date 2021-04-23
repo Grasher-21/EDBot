@@ -124,13 +124,12 @@ bot.on('message', message => {
                 mining(message);
                 break;
 
-            case '!module':
-            case '!modules':
-                modules(message);
-                break;
-
             case '!onfootcombat':
                 onFootCombat(message);
+                break;
+
+            case '!outfitting':
+                outfitting(message);
                 break;
 
             case '!passenger':
@@ -250,7 +249,6 @@ ${messageQuote}
 !materials
 !minerals
 !mining
-!modules
 !onFootCombat
 !outfitting
 !passengers
@@ -260,7 +258,7 @@ ${messageQuote}
 !shipCombat
 !ships
 !sites
-!stationrepair
+!stationRepair
 !suits
 !synthesis
 !thargoidCombat
@@ -358,15 +356,16 @@ Example: Hotspot of Rhodplumsite - means that whenever you find a rock with deep
 
 I usually do Deep Core Mining at LTT 7370 or HR 6828 depending on the mineral I want to go for:
 
-Commodity ----------- System ---------Body
-Alexandrite           LTT 7370        6
-Bromellite            LTT 7370        6
-Grandidierite         LTT 7370        6
-Monazite              HR 6828         2
-Rhodplumsite          HR 6828         2
-Serendibite           HR 6828         2
-Tritium               LTT 7370        6
-Void Opal             LTT 7370        6${messageQuote}`);
+Commodity ----------- System -------- Body ----- Ring Type
+Alexandrite           LTT 7370        6          Metal Rich, Icy, Rocky
+Benitoite             ---             -          Metal Rich, Rocky
+Bromellite            LTT 7370        6          Metal Rich, Rocky
+Grandidierite         LTT 7370        6          Metal Rich, Icy
+Monazite              HR 6828         2          Metal Rich, Rocky
+Rhodplumsite          HR 6828         2          Metal Rich
+Serendibite           HR 6828         2          Metal Rich, Rocky
+Tritium               LTT 7370        6          Metal Rich
+Void Opal             LTT 7370        6          Icy${messageQuote}`);
 }
 
 function engineers(message) {
@@ -649,18 +648,18 @@ A lot of Credits can be made from mining. Type **!minerals** for more informatio
 Type **!deepcore** for the best places, in my opinion, for deep core mining`);
 }
 
-function modules(message) {
+function onFootCombat(message) {
+    message.reply(`${messageQuote}
+Still too soon to add content. Will be updated eventually...${messageQuote}<http://eddb.io>`);
+}
+
+function outfitting(message) {
     message.reply(`${messageQuote}
 When outfitting your ship with modules, you need to think where exactly you want them to be in the ship. For instance, if the ship you're outfitting is going to use the cargo hatch quite often, such is the case of a mining ship, then you might want to use Point Defences which can shoot Hatch Breaker Limpets thus preventing your cargo from being stolen by pirates. However, these Point Defences should be placed underneath the ship which is the location of the cargo hatch. Point Defence that is on the top of the ship will be less efficient when it comes to protect your cargo hatch.
 
 Since in Elite Dangerous it can be confusing where the modules are being placed, make sure to see the blueprints of your ship in the following link${messageQuote}<http://a.teall.info/edsa/>
 ${messageQuote}
 Also, use the following website to check where to buy the modules you want${messageQuote}<http://eddb.io>`);
-}
-
-function onFootCombat(message) {
-    message.reply(`${messageQuote}
-Still too soon to add content. Will be updated eventually...${messageQuote}<http://eddb.io>`);
 }
 
 function passengers(message) {
